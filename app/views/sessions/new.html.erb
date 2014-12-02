@@ -1,0 +1,20 @@
+<h1>WEB問診フォーム</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(:session, url: sessions_path) do |f| %>
+	  <div class="field">
+      <%= f.label :reservation_id %><br>
+      <%= f.text_field :reservation_id %>
+      </div>
+      <div class="field">
+      <%= f.label :birthday %><br>
+      <%= f.date_field :birthday %>
+      </div>
+	  <%= f.submit "OK",  class: "btn btn-large btn-primary" %>
+    <% end %>
+
+    <p>New user? <%= link_to "Sign up now!", '#' %></p>
+  </div>
+</div>
+

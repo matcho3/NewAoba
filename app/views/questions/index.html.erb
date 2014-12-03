@@ -1,20 +1,16 @@
-<h1>Listing questions</h1>
+<h1>共通項目</h1>
 
 <table>
   <thead>
     <tr>
       <th>Operation</th>
       <th>Content</th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
 
   <tbody>
     <% @questions.each do |question| %>
       <tr>
-        <td><%= question.operation_id %></td>
         <td><%= question.content %></td>
         <td><%= link_to 'Show', question %></td>
         <td><%= link_to 'Edit', edit_question_path(question) %></td>

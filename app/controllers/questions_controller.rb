@@ -4,11 +4,16 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
   def index
-    @questions = Question.all
+    # @questions = Question.all
+    @questions = Question.where("operation_id = ?", nil)
+    # Page.where("title = ?", nil)
+    # @Oquestions = Question.where(operation_id: !null)
+    # raise 'hi'
   end
 
   # GET /questions/1
-  # GET /questions/1.json
+  # GET /questions/1.json<!-- ・現在授乳中ですか？　　　　　　　　　　　　　　　　　　　　　　□はい　□いいえ -->
+
   def show
   end
 
@@ -16,6 +21,9 @@ class QuestionsController < ApplicationController
   def new
     @question = Question.new
   end
+
+  
+
 
   # GET /questions/1/edit
   def edit

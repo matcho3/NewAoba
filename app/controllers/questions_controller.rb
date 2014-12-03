@@ -12,8 +12,6 @@ class QuestionsController < ApplicationController
      @oquestions = current_user.operation.questions
     # Page.where("title = ?", nil)
     # @Oquestions = Question.where(operation_id: !null)
-    # raise 'hi'
-
   end
 
   # GET /questions/1

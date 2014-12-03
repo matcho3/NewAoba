@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     # @questions = Question.all
-    @questions = Question.where("operation_id = ?", nil)
+    @questions = Question.where(operation_id: nil)
     # Page.where("title = ?", nil)
     # @Oquestions = Question.where(operation_id: !null)
     # raise 'hi'

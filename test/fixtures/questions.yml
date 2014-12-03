@@ -39,67 +39,276 @@ question_9:
 
 question_10:
   id: 10
+  content: 3ヶ月以内に結婚式や肌を露出するような大事なイベントはありますか？
+
+question_11:
+  id: 11
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+
+question_12:
+  id: 12
+  content: ◆何をご覧になってご予約頂きましたか？◆
+
+question_13:
+  id: 13
+  content: ◆クーポンをご利用の方は以下の項目に入力をお願いします◆
+# 共通項目入力終了
+
+
+# エクリシス
+question_10:
+  id: 10
   operation_id: 1
-  content: 以前この手術を受けたことがありますか？
+  content: エクシリスのご経験はありますか？
 
-# question_1:
+question_11:
+  id: 11
+  operation_id: 1
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+
+# ウルトラアクセント
+question_12:
+  id: 12
+  operation_id: 2
+  content: ウルトラアクセントのご経験はありますか？
+
+question_13:
+  id: 13
+  operation_id: 2
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+
+# テノール
+question_14:
+  id: 14
+  operation_id: 3
+  content: テノールのご経験はありますか？
+
+question_15:
+  id: 15
+  operation_id: 3
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+
+# ゼルティック
+question_16:
+  id: 16
+  operation_id: 4
+  content: ゼルティックのご経験はありますか？
+
+question_17:
+  id: 17
+  operation_id: 4
+  content: 現在外用薬、内服薬等をご使用中ですか？
+
+#エレクトロポレーション
+question_18:
+  id: 18
+  operation_id: 5
+  content: エレクトロポレーションのご経験はありますか？
+
+question_19:
+  id: 19
+  operation_id: 5
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+
+#脱毛
+question_20:
+  id: 20
+  operation_id: 6
+  content: 脱毛のご経験はありますか？
+
+question_21:
+  id: 21
+  operation_id: 6
+  content: 1ヶ月以内に日焼けをしましたか？
+
+question_22:
+  id: 22
+  operation_id: 6
+  content: 1ヶ月以内に毛抜きで処理をしましたか？
+
+question_23:
+  id: 23
+  operation_id: 6
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+
+#　レーザートーニング
+question_24:
+  id: 24
+  operation_id: 7
+  content: レーザートーニングのご経験はありますか？
+
+question_25:
+  id: 25
+  operation_id: 7
+  content: 1ヶ月以内に日焼けをしましたか？
+
+question_26:
+  id: 26
+  operation_id: 7
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+
+# フラクショナルレーザー
+
+question_27:
+  id: 27
+  operation_id: 8
+  content: フラクショナルレーザーのご経験はありますか？
+
+question_28:
+  id: 28
+  operation_id: 8
+  content: 1ヶ月以内に日焼けをしましたか？
+
+question_29:
+  id: 29
+  operation_id: 8
+  content: 治療をご希望の部分にひどい乾燥や皮むけなどはありますか？
+
+#サーマクール
+question_30:
+  id: 30
+  operation_id: 9
+  content: サーマクールのご経験はありますか？
+
+question_31: 
+  id: 31
+  operation_id: 9
+  content: 1ヶ月以内に日焼けをしましたか？
+
+question_32:
+  id: 32
+  operation_id: 9
+  content: 治療をご希望の部分にニキビや皮むけなどの皮膚疾患はありますか？
+
+#ルビーレーザー　CO2レーザー
+question_33:
+  id: 33
+  operation_id: 10
+  content: シミやホクロ取りレーザーのご経験はありますか？
+
+question_34:
+  id: 34
+  operation_id: 10
+  content: 1ヶ月以内に日焼けをしましたか？
+
+question_35:
+  id: 35
+  operation_id: 10
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+
+#ヒアルロン酸注射
+question_36:
+  id: 36
+  operation_id: 11
+  content: ヒアルロン酸注射のご経験はありますか？
+
+question_37:
+  id: 37
+  operation_id: 11
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+
+#ボトックス注射
+question_38:
+  id: 38
+  operation_id: 12
+  content: ボトックス注射のご経験はありますか？
+
+question_39:
+  id: 39
+  operation_id: 12
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+
+# question_40:
+#   id: 40
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_41:
+#   id: 41
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_42:
+#   id: 42
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_43:
+#   id: 43
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_44:
+#   id: 44
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_45:
+#   id: 45
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_46:
+#   id: 46
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_47:
+#   id: 47
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_48:
+#   id: 48
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_49:
+#   id: 49
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_50:
+#   id: 50
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_:
+#   id: 
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_:
+#   id: 
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_:
+#   id: 
+#   operation_id: 
 #   content:
 
-# question_1:
+# question_:
+#   id: 
+#   operation_id: 
 #   content:
 
+# question_:
+#   id: 
+#   operation_id: 
+#   content:
 
+# question_:
+#   id: 
+#   operation_id: 
+#   content:
 
+# # question_5:
+# #   operation_id: 1
+# #   content: 以前この手術を受けたことがありますか？
 
-
-
-
-
-# question_5:
-#   operation_id: 1
-#   content: 以前この手術を受けたことがありますか？
-
-# question_6:
-#   operation_id: 1
-#   content: 顔のどの部分を手術しますか？
+# # question_6:
+# #   operation_id: 1
+# #   content: 顔のどの部分を手術しますか？
 
 

@@ -3,8 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Operation</th>
-      <th>Content</th>
+      <th>共通項目入力</th>
     </tr>
   </thead>
 
@@ -16,7 +15,26 @@
         <td><%= link_to 'Edit', edit_question_path(question) %></td>
         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
+    <% end %>  
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>各施術項目入力</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @oquestions.each do |oquestion| %>
+      <tr>
+        <td><%= oquestion.content %></td>
+        <td><%= link_to 'Show', oquestion %></td>
+        <!-- <td><%#= link_to 'Edit', edit_question_path(question) %></td> -->
+        <td><%= link_to 'Destroy', oquestion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>  
   </tbody>
 </table>
 

@@ -5,16 +5,22 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     # @questions = Question.all
-    @questions = Question.where("operation_id = ?", nil)
+    @questions = Question.where(operation_id: nil)
+    # @oquestions = Question.where!(operation_id: !nil)
+
+
+     @oquestions = current_user.operation.questions
     # Page.where("title = ?", nil)
     # @Oquestions = Question.where(operation_id: !null)
     # raise 'hi'
+
   end
 
   # GET /questions/1
   # GET /questions/1.json<!-- ・現在授乳中ですか？　　　　　　　　　　　　　　　　　　　　　　□はい　□いいえ -->
 
   def show
+    @questions = Question.where(operation_id: nil)
   end
 
   # GET /questions/new

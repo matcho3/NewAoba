@@ -8,7 +8,6 @@ before_create :create_remember_token
   belongs_to :operation
 
 
-
   def User.new_remember_token
     SecureRandom.urlsafe_base64
   end

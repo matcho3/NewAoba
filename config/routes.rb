@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   match '/signout',to:'sessions#destroy',via:'delete'
    # match '/confirm/:id',to:'users#confirm', as:'user_confirm', via:'get'
    match '/driver/:id',to:'drivers#new',as:'resister_driver', via:'get'
+   match '/answer',to:'answers#answer',via:'get'
 
   resources :answers
   resources :questions

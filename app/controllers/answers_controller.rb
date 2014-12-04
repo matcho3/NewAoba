@@ -12,6 +12,23 @@ class AnswersController < ApplicationController
   def show
   end
 
+  def answer
+    # @answer = Answer.new
+    # @answer.user_id = current_user.id
+    # current_user.operation.questions.each do |question|
+    # @answer.question_id = question.id
+    # @answer.save
+  end
+
+
+  # create_table "answers", force: true do |t|
+  #   t.text     "content"
+  #   t.integer  "user_id"
+  #   t.integer  "question_id"
+  #   t.datetime "created_at"
+  #   t.datetime "updated_at"
+  # end
+
   # GET /answers/new
   def new
     @answer = Answer.new

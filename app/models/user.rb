@@ -6,6 +6,7 @@ before_create :create_remember_token
          :recoverable, :rememberable, :trackable, :validatable
 
   belongs_to :operation
+  has_many :answers
 
 
   def User.new_remember_token

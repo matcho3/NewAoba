@@ -19,25 +19,5 @@
   </tbody>
 </table>
 
-<table>
-  <thead>
-    <tr>
-      <th>各施術項目入力</th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @oquestions.each do |oquestion| %>
-      <tr>
-        <td><%= oquestion.content %></td>
-        <td><%= link_to 'Show', oquestion %></td>
-        <!-- <td><%#= link_to 'Edit', edit_question_path(question) %></td> -->
-        <td><%= link_to 'Destroy', oquestion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>  
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Question', new_question_path %>
+<%= link_to '次へ', operations_path %>

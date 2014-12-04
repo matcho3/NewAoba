@@ -9,7 +9,7 @@ class QuestionsController < ApplicationController
     # @oquestions = Question.where!(operation_id: !nil)
 
 
-     @oquestions = current_user.operation.questions
+     # @oquestions = current_user.operation.questions
     # Page.where("title = ?", nil)
     # @Oquestions = Question.where(operation_id: !null)
   end

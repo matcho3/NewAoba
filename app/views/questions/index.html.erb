@@ -11,13 +11,41 @@
     <% @questions.each do |question| %>
       <tr>
         <td><%= question.content %></td>
-        <td><%= link_to 'Show', question %></td>
-        <td><%= link_to 'Edit', edit_question_path(question) %></td>
-        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          
+          <% @question.answers.each do |answer| %>
+          <%= question.fields_for :answers, answer do |answer_field| %>
+            <tr>
+              <td><%= answer_field.text_field :content %></td>
+            </tr>
+          <% end %>
+          <% end %>
       </tr>
-    <% end %>  
+    <% end %> 
   </tbody>
 </table>
 
 
 <%= link_to '次へ', operations_path %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

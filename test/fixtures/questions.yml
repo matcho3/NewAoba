@@ -4,219 +4,290 @@
 question_1:
   id: 1
   content: 1ヶ月以内にエステや病院で美容治療を受けましたか？
+  type: 1
 
 question_2:
   id: 2
-  content: 現在妊娠の可能性はありますか？　　
+  content: 現在妊娠の可能性はありますか？
+  type: 2
 
 question_3:
   id: 3
   content: 現在授乳中ですか？
+  type: 2
 
 question_4:
   id: 4
   content: 金属糸、金属プレート、金属ボルト、ペースメーカー、埋込式除細動器、金製剤の服用歴等、体内に金属類はございませんか？
+  type: 2
 
 question_5:
   id: 5
   content: 現在治療中の病気はありますか？
+  type: 3
 
 question_6:
   id: 6
   content: 現在外用薬、内服薬等をご使用中ですか？　
+  type: 4
 
 question_7:
   id: 7
   content: ケロイド体質と診断されたことはありますか？
+  type: 2
 
 question_8:
   id: 8
   content: ヘルペスの既往歴はありますか？
+  type: 5
 
 question_9:
   id: 9
   content: 今までにアレルギー症状がでたことはありますか？
+  type: 6
 
 question_10:
   id: 10
   content: 3ヶ月以内に結婚式や肌を露出するような大事なイベントはありますか？
+  type: 7
 
 question_11:
   id: 11
   content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+  type: 8
 
 question_12:
   id: 12
   content: ◆何をご覧になってご予約頂きましたか？◆
+  type: 9
 
 question_13:
   id: 13
   content: ◆クーポンをご利用の方は以下の項目に入力をお願いします◆
+  type: 10
+
+# 要記入type 11
+# 要記入type 11
 # 共通項目入力終了
 
-
 # エクリシス
-question_10:
-  id: 10
-  operation_id: 1
-  content: エクシリスのご経験はありますか？
-
-question_11:
-  id: 11
-  operation_id: 1
-  content: 治療をご希望の部分に皮膚疾患はありますか？
-
-# ウルトラアクセント
-question_12:
-  id: 12
-  operation_id: 2
-  content: ウルトラアクセントのご経験はありますか？
-
-question_13:
-  id: 13
-  operation_id: 2
-  content: 治療をご希望の部分に皮膚疾患はありますか？
-
-# テノール
 question_14:
   id: 14
-  operation_id: 3
-  content: テノールのご経験はありますか？
+  operation_id: 1
+  content: エクシリスのご経験はありますか？
+  type: 2
 
 question_15:
   id: 15
-  operation_id: 3
+  operation_id: 1
   content: 治療をご希望の部分に皮膚疾患はありますか？
+  type: 12
 
-# ゼルティック
+# ウルトラアクセント
 question_16:
   id: 16
-  operation_id: 4
-  content: ゼルティックのご経験はありますか？
+  operation_id: 2
+  content: ウルトラアクセントのご経験はありますか？
+  type: 2
 
 question_17:
   id: 17
-  operation_id: 4
-  content: 現在外用薬、内服薬等をご使用中ですか？
+  operation_id: 2
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+  type: 12
 
-#エレクトロポレーション
+# テノール
 question_18:
   id: 18
-  operation_id: 5
-  content: エレクトロポレーションのご経験はありますか？
+  operation_id: 3
+  content: テノールのご経験はありますか？
+  type: 2
 
 question_19:
   id: 19
-  operation_id: 5
+  operation_id: 3
   content: 治療をご希望の部分に皮膚疾患はありますか？
+  type: 12
 
-#脱毛
+# ゼルティック
 question_20:
   id: 20
-  operation_id: 6
-  content: 脱毛のご経験はありますか？
+  operation_id: 4
+  content: ゼルティックのご経験はありますか？
+  type: 2
 
 question_21:
   id: 21
-  operation_id: 6
-  content: 1ヶ月以内に日焼けをしましたか？
+  operation_id: 4
+  content: 現在外用薬、内服薬等をご使用中ですか？
+  type: 4
 
+#エレクトロポレーション
 question_22:
   id: 22
-  operation_id: 6
-  content: 1ヶ月以内に毛抜きで処理をしましたか？
+  operation_id: 5
+  content: エレクトロポレーションのご経験はありますか？
+  type: 2
 
 question_23:
   id: 23
-  operation_id: 6
+  operation_id: 5
   content: 治療をご希望の部分に皮膚疾患はありますか？
+  type: 12
 
-#　レーザートーニング
+#脱毛
 question_24:
   id: 24
-  operation_id: 7
-  content: レーザートーニングのご経験はありますか？
+  operation_id: 6
+  content: 脱毛のご経験はありますか？
+  type: 2
 
 question_25:
   id: 25
-  operation_id: 7
+  operation_id: 6
   content: 1ヶ月以内に日焼けをしましたか？
+  type: 13
 
 question_26:
   id: 26
-  operation_id: 7
-  content: 治療をご希望の部分に皮膚疾患はありますか？
-
-# フラクショナルレーザー
+  operation_id: 6
+  content: 1ヶ月以内に毛抜きで処理をしましたか？
+  type: 13
 
 question_27:
   id: 27
-  operation_id: 8
-  content: フラクショナルレーザーのご経験はありますか？
+  operation_id: 6
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+  type: 12
 
+# 要記入type14
+# 要記入type14
+
+#　レーザートーニング
 question_28:
   id: 28
-  operation_id: 8
-  content: 1ヶ月以内に日焼けをしましたか？
+  operation_id: 7
+  content: レーザートーニングのご経験はありますか？
+  type: 2
 
 question_29:
   id: 29
-  operation_id: 8
-  content: 治療をご希望の部分にひどい乾燥や皮むけなどはありますか？
+  operation_id: 7
+  content: 1ヶ月以内に日焼けをしましたか？
+  type: 13
 
-#サーマクール
 question_30:
   id: 30
-  operation_id: 9
-  content: サーマクールのご経験はありますか？
+  operation_id: 7
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+  type: 12
 
-question_31: 
+# 要記入type 15
+# 要記入type 15
+
+# フラクショナルレーザー
+
+question_31:
   id: 31
-  operation_id: 9
-  content: 1ヶ月以内に日焼けをしましたか？
+  operation_id: 8
+  content: フラクショナルレーザーのご経験はありますか？
+  type: 16
 
 question_32:
   id: 32
-  operation_id: 9
-  content: 治療をご希望の部分にニキビや皮むけなどの皮膚疾患はありますか？
+  operation_id: 8
+  content: 1ヶ月以内に日焼けをしましたか？
+  type: 13
 
-#ルビーレーザー　CO2レーザー
 question_33:
   id: 33
-  operation_id: 10
-  content: シミやホクロ取りレーザーのご経験はありますか？
+  operation_id: 8
+  content: 治療をご希望の部分にひどい乾燥や皮むけなどはありますか？
+  type: 12
 
+# 要記入type17
+# 要記入type17
+
+#サーマクール
 question_34:
   id: 34
-  operation_id: 10
-  content: 1ヶ月以内に日焼けをしましたか？
+  operation_id: 9
+  content: サーマクールのご経験はありますか？
+  type: 16
 
-question_35:
+question_35: 
   id: 35
-  operation_id: 10
-  content: 治療をご希望の部分に皮膚疾患はありますか？
+  operation_id: 9
+  content: 1ヶ月以内に日焼けをしましたか？
+  type: 13
 
-#ヒアルロン酸注射
 question_36:
   id: 36
-  operation_id: 11
-  content: ヒアルロン酸注射のご経験はありますか？
+  operation_id: 9
+  content: 治療をご希望の部分にニキビや皮むけなどの皮膚疾患はありますか？
+  type: 12
 
+# 要記入type18
+# 要記入type18
+
+#ルビーレーザー　CO2レーザー
 question_37:
   id: 37
-  operation_id: 11
-  content: 治療をご希望の部分に皮膚疾患はありますか？
+  operation_id: 10
+  content: シミやホクロ取りレーザーのご経験はありますか？
+  type: 19
 
-#ボトックス注射
 question_38:
   id: 38
-  operation_id: 12
-  content: ボトックス注射のご経験はありますか？
+  operation_id: 10
+  content: 1ヶ月以内に日焼けをしましたか？
+  type: 13
 
 question_39:
   id: 39
+  operation_id: 10
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+  type: 12
+
+  # 要記入type20
+  # 要記入type20
+
+#ヒアルロン酸注射
+question_40:
+  id: 40
+  operation_id: 11
+  content: ヒアルロン酸注射のご経験はありますか？
+  type: 21
+
+question_41:
+  id: 41
+  operation_id: 11
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+  type: 12
+
+  # 要記入type22
+  # 要記入type22
+
+#ボトックス注射
+question_42:
+  id: 42
+  operation_id: 12
+  content: ボトックス注射のご経験はありますか？
+  type: 21
+
+question_43:
+  id: 43
   operation_id: 12
   content: 治療をご希望の部分に皮膚疾患はありますか？
+  type: 12
+
+  # 要記入type23
+  # 要記入type23
+
+
+
+
+
 
 # question_40:
 #   id: 40

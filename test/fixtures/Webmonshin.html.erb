@@ -8,12 +8,15 @@
 □いいえ -->
 <!-- type1 -->
 
-
-
-
-
-
-
+<% if question.type == 1 %>
+      <div class="field">
+      	<p><%= question.checkbox :checkbox %>はい</p>
+        <p>エステ名•病院名<%= question.text_field :content %></p>
+        <p>施術内容:<%= question.text_field :content2 %></p>
+        <p>時期:<%= question.select_tag :content3 %></p>
+        <p><%= question.checkbox :checkbox2 %>いいえ</p>
+      </div>
+<% end %>
 
 
 
@@ -24,7 +27,11 @@
 ・現在妊娠の可能性はありますか？　　　　　　　　　　　　　　　<!-- 　□はい　□いいえ -->
 <!-- type2 -->
 
-
+<% if question.type == 2 %>
+      <div class="field">
+      	<p><%= question.checkbox :checkbox %>はい, <%= question.checkbox :checkbox2 %>いいえ</p>
+      </div>
+<% end %>
 
 
 
@@ -40,7 +47,11 @@
 
 ・現在授乳中ですか？　　　　　　　　　　　　　　　　　　　　　<!-- 　□はい　□いいえ -->
 <!-- type2 -->
-
+<% if question.type == 2 %>
+      <div class="field">
+      	<p><%= question.checkbox :checkbox %>はい, <%= question.checkbox :checkbox2 %>いいえ</p>
+      </div>
+<% end %>
 
 
 
@@ -56,7 +67,11 @@
 
 ・金属糸、金属プレート、金属ボルト、ペースメーカー、埋込式除細動器、金製剤の服用歴等、体内に金属類はございませんか？　　　　　　　　　　　　　<!-- 　□はい　□いいえ -->
 <!-- type2 -->
-
+<% if question.type == 2 %>
+      <div class="field">
+      	<p><%= question.checkbox :checkbox %>はい, <%= question.checkbox :checkbox2 %>いいえ</p>
+      </div>
+<% end %>
 
 
 
@@ -69,7 +84,11 @@
 
 ・現在治療中の病気はありますか？　<!-- □はい（　　　　　　　　　　　　　）　□いいえ -->
 <!-- type 3 -->
-
+<% if question.type == 3 %>
+      <div class="field">
+      	<p><%= question.checkbox :checkbox %>はい, <%= question.checkbox :checkbox2 %>いいえ</p>
+      </div>
+<% end %>
 
 
 
@@ -79,8 +98,13 @@
 <!-- □はい（薬品名：　　　　　　　　　　　　　　　　　　）　□いいえ
  -->
 <!-- type4 -->
-
-
+<% if question.type == 4 %>
+      <div class="field">
+      	<p><%= question.checkbox :checkbox %>はい</p>
+        <p>薬品名<%= question.text_field :content %></p>
+        <p><%= question.checkbox :checkbox2 %>いいえ</p>
+      </div>
+<% end %>
 
 
 
@@ -93,7 +117,11 @@
 
 ・ケロイド体質と診断されたことはありますか？　　　　　　　　　　<!-- □はい　□いいえ -->
 <!-- type 2  -->
-
+<% if question.type == 2 %>
+      <div class="field">
+      	<p><%= question.checkbox :checkbox %>はい, <%= question.checkbox :checkbox2 %>いいえ</p>
+      </div>
+<% end %>
 
 
 
@@ -450,7 +478,7 @@
 
 
 <!-- 要記入 -->
-<!-- 要記入 -->
+<!-- 要記入 要operationid-->
 ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
 <!-- □生理日は全日治療を行うことができませんのでご了承下さい。治療予約日に生理が重なる場合は、当院あてにお早めにご連絡下さいますようお願い申し上げます。
 □治療前日に治療部位の剃毛をお願い致します（うぶ毛なども全てきれいにお剃り願います）。剃り残しがある場合はこちらで剃毛致しますが、一部位につき1,080円の剃毛料金が発生致しますことをご了承下さい。
@@ -575,8 +603,8 @@
 
 
 
-<!-- 要記入 -->
-<!-- 要記入 -->
+<!-- 要記入8 -->
+<!-- 要記入8 -->
 ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
 <!-- □治療前日に治療部位の剃毛をお願い致します。男性の方でヒゲ部分の照射を希望されない場合は、ヒゲの剃毛はして頂かなくて構いません。
 □治療代金と別途で麻酔代（2,160円もしくは3,240円）が発生致しますことをご了承下さい。
@@ -640,8 +668,8 @@
 
 
 
-<!-- 要記入 -->
-<!-- 要記入 -->
+<!-- 要記入9 -->
+<!-- 要記入9 -->
 ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
 <!-- □治療前日に治療部位の剃毛をお願い致します。男性の方でヒゲ部分の照射を希望されない場合は、ヒゲの剃毛はして頂かなくて構いません。 -->
 

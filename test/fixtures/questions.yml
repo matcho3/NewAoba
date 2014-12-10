@@ -135,7 +135,7 @@ question_23:
   content: 治療をご希望の部分に皮膚疾患はありますか？
   type: 12
 
-#脱毛
+#脱毛6
 question_24:
   id: 24
   operation_id: 6
@@ -161,127 +161,164 @@ question_27:
   type: 12
 
 # 要記入type14
+question_28:
+  id: 28
+  operation_id: 6
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+  type: 14
 # 要記入type14
 
 #　レーザートーニング
-question_28:
-  id: 28
+question_29:
+  id: 29
   operation_id: 7
   content: レーザートーニングのご経験はありますか？
   type: 2
 
-question_29:
-  id: 29
+question_30:
+  id: 30
   operation_id: 7
   content: 1ヶ月以内に日焼けをしましたか？
   type: 13
 
-question_30:
-  id: 30
+question_31:
+  id: 31
   operation_id: 7
   content: 治療をご希望の部分に皮膚疾患はありますか？
   type: 12
 
 # 要記入type 15
+question_32:
+  id: 32
+  operation_id: 7
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+  type: 15
 # 要記入type 15
+
+
 
 # フラクショナルレーザー
 
-question_31:
-  id: 31
+question_33:
+  id: 33
   operation_id: 8
   content: フラクショナルレーザーのご経験はありますか？
   type: 16
 
-question_32:
-  id: 32
+question_34:
+  id: 34
   operation_id: 8
   content: 1ヶ月以内に日焼けをしましたか？
   type: 13
 
-question_33:
-  id: 33
+question_35:
+  id: 35
   operation_id: 8
   content: 治療をご希望の部分にひどい乾燥や皮むけなどはありますか？
   type: 12
 
 # 要記入type17
+question_36:
+  id: 36
+  operation_id: 8
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+  type: 17
 # 要記入type17
 
 #サーマクール
-question_34:
-  id: 34
+question_37:
+  id: 37
   operation_id: 9
   content: サーマクールのご経験はありますか？
   type: 16
 
-question_35: 
-  id: 35
-  operation_id: 9
-  content: 1ヶ月以内に日焼けをしましたか？
-  type: 13
-
-question_36:
-  id: 36
-  operation_id: 9
-  content: 治療をご希望の部分にニキビや皮むけなどの皮膚疾患はありますか？
-  type: 12
-
-# 要記入type18
-# 要記入type18
-
-#ルビーレーザー　CO2レーザー
-question_37:
-  id: 37
-  operation_id: 10
-  content: シミやホクロ取りレーザーのご経験はありますか？
-  type: 19
-
-question_38:
+question_38: 
   id: 38
-  operation_id: 10
+  operation_id: 9
   content: 1ヶ月以内に日焼けをしましたか？
   type: 13
 
 question_39:
   id: 39
+  operation_id: 9
+  content: 治療をご希望の部分にニキビや皮むけなどの皮膚疾患はありますか？
+  type: 12
+
+# 要記入type18
+question_40:
+  id: 40
+  operation_id: 9
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+  type: 18
+# 要記入type18
+
+#ルビーレーザー　CO2レーザー
+question_41:
+  id: 41
+  operation_id: 10
+  content: シミやホクロ取りレーザーのご経験はありますか？
+  type: 19
+
+question_42:
+  id: 42
+  operation_id: 10
+  content: 1ヶ月以内に日焼けをしましたか？
+  type: 13
+
+question_43:
+  id: 43
   operation_id: 10
   content: 治療をご希望の部分に皮膚疾患はありますか？
   type: 12
 
   # 要記入type20
+question_44:
+  id: 44
+  operation_id: 10
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+  type: 20
   # 要記入type20
 
 #ヒアルロン酸注射
-question_40:
-  id: 40
+question_45:
+  id: 45
   operation_id: 11
   content: ヒアルロン酸注射のご経験はありますか？
   type: 21
 
-question_41:
-  id: 41
+question_46:
+  id: 46
   operation_id: 11
   content: 治療をご希望の部分に皮膚疾患はありますか？
   type: 12
 
   # 要記入type22
+question_47:
+  id: 47
+  operation_id: 11
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+  type: 22
   # 要記入type22
 
 #ボトックス注射
-question_42:
-  id: 42
+question_48:
+  id: 48
   operation_id: 12
   content: ボトックス注射のご経験はありますか？
   type: 21
 
-question_43:
-  id: 43
+question_49:
+  id: 49
   operation_id: 12
   content: 治療をご希望の部分に皮膚疾患はありますか？
   type: 12
 
   # 要記入type23
+question_50:
+  id: 50
+  operation_id: 12
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+  type: 23
   # 要記入type23
 
 

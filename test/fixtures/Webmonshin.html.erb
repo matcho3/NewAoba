@@ -136,7 +136,11 @@
 ・ヘルペスの既往歴はありますか？　
 <!-- □はい（時期：　　　　年　　　　月　　　　日）　□いいえ -->
 <!-- type5 -->
-
+<% if question.type == 5 %>
+      <div class="field">
+      	<p><%= question.checkbox :checkbox %>はい<%= question %>
+      </div>
+<% end %>
 
 
 

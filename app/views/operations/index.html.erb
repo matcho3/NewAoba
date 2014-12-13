@@ -1,22 +1,101 @@
-<h1>各施術項目入力</h1>
+<% @oquestions.first(1).each do |oquestion| %>
+<!-- @posts.first(3).each do |post| -->
+  
+<% if oquestion.operation_id == 1 %>
+<%= render 'shared/eclisis_form' %>
+<% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>各施術項目入力</th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @oquestions.each do |oquestion| %>
-      <tr>
-        <td><%= oquestion.content %></td>
-        <td><%= link_to 'Show', oquestion %></td>
-        <!-- <td><%#= link_to 'Edit', edit_question_path(question) %></td> -->
-        <td><%= link_to 'Destroy', oquestion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>  
-  </tbody>
-</table>
-<%= link_to '次へ', answer_path %>
+
+
+
+<% if oquestion.operation_id == 2 %>
+<%= render 'shared/ultra_accent_form' %>
+<% end %>
+
+
+
+
+<% if oquestion.operation_id == 3 %>
+<%= render 'shared/tenole_form' %>
+<% end %>
+
+
+
+<% if oquestion.operation_id == 4 %>
+<%= render 'shared/zeltic_form' %>
+<% end %>
+
+
+
+
+
+<% if oquestion.operation_id == 5 %>
+<%= render 'shared/electroportion_form' %>
+<% end %>
+
+
+
+
+
+<% if oquestion.operation_id == 6 %>
+<%= render 'shared/datsumou_form' %>
+<% end %>
+
+
+
+
+
+<% if oquestion.operation_id == 7 %>
+<%= render 'shared/lasertraning_form' %>
+<% end %>
+
+
+
+
+
+<% if oquestion.operation_id == 8 %>
+<%= render 'shared/fractional_form' %>
+<% end %>
+
+
+
+
+
+<% if oquestion.operation_id == 9 %>
+<%= render 'shared/sarmacool_form' %>
+<% end %>
+
+
+
+
+
+<% if oquestion.operation_id == 10 %>
+<%= render 'shared/rubylaser_form' %>
+<% end %>
+
+
+
+
+
+<% if oquestion.operation_id == 11 %>
+<%= render 'shared/hiaruronsan_form' %>
+<% end %>
+
+
+
+
+<% if oquestion.operation_id == 12 %>
+<%= render 'shared/botox_form' %>
+<% end %>
+
+<% end %> 
+
+
+
+
+
+
+
+
 

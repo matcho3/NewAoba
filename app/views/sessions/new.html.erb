@@ -1,19 +1,238 @@
-<h1>WEB問診フォーム</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aoba</title>
+    <!-- Description, Keywords and Author -->
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your,Keywords">
+    <meta name="author" content="ResponsiveWebInc">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Styles -->
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Universal Mega menu -->
+    <link href="css/mgmenu.min.css" rel="stylesheet">
+    <!-- Magnific Popup -->
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!-- Owl carousel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/styles/medical.css" rel="stylesheet">
+    <link href="css/styles/style.css" rel="stylesheet">
+    <link href="css/styles/skin-red.css" rel="stylesheet" id="color_theme">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+  </head>
+  
+  <body>
+  
+    <div class="outer">
+      
+      <div class="top-bar">
+        
+      
+      <!-- Top bar ends -->
+      
+      <!-- Header two Starts -->
+      <div class="header-2">
+      
+        <!-- Container -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <!-- Logo section -->
+              <div class="logo">
+                <h1><img src="/assets/logo.png"></h1>
+              </div>
+            </div>
+            <div class="col-md-9">
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(:session, url: sessions_path) do |f| %>
-	  <div class="field">
-      <%= f.label :reservation_id %><br>
-      <%= f.text_field :reservation_id %>
+              <!-- Contact starts -->
+              <div class="tb-contact pull-right">
+                <!-- Email -->
+                <i class="fa fa-envelope color"></i> &nbsp; <a href="mailto:contact@domain.com">info@aoba.com</a>
+                &nbsp;&nbsp;  
+                <!-- Phone -->
+                <i class="fa fa-phone color"></i> &nbsp; +81 90 9999 9999
+              </div>
+              <!-- Contact ends -->
+              
+              
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="field">
-      <%= f.label :birthday %><br>
-      <%= f.date_field :birthday %>
-      </div>
-	  <%= f.submit "OK",  class: "btn btn-large btn-primary" %>
-    <% end %>
+  
+      <!-- Header two ends -->
+      
+      <!-- Main content starts -->
+  
+      <div class="main-block">
+        
+        <!-- Page heading two starts -->
+        
+        <div class="page-heading-two">
+          <div class="container">
+            <h2 style="float:none; text-align:center">問診入力フォーム <span><!-- 以下のアンケートにお答えください --></span></h2>
+          </div>
+        </div>
 
-    <p>New user? <%= link_to "Sign up now!", '#' %></p>
-  </div>
-</div>
+
+
+
+<div class="container">
+          <div class="medical">
+            <div class="medic-appoint">
+              <div class="row">
+                <div class="col-md-8 col-sm-8 col-md-offset-2">
+                  
+                  <div class="block-heading-two">
+                    <h3><span>予約情報入力</span></h3>
+                  </div>
+                  
+                  <!-- Appointment content -->
+                  <form role="form">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                          <%= form_for(:session, url: sessions_path) do |f| %>
+                          <%= f.label "予約番号" %><br>
+                          <%= f.text_field :reservation_id %>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+
+                           <%= f.label "生年月日" %><br>
+                           <%= f.date_field :birthday %>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-12 col-sm-12">
+                        <%= f.submit "OK",  class: "btn btn-color" %><% end %>
+                        <!-- <button type="reset" class="btn btn-default">Reset</button> -->
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-8 col-sm-8 col-md-offset-2" style="padding-top: 100px; padding-bottom: 100px">
+                  <div class="block-heading-two">
+                    <h3><span>予約番号を忘れてしまった方はこちら</span></h3>
+                  </div>
+
+                  <!-- Appointment content -->
+                  <form role="form">
+                    <div class="row">
+                      
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                          <%= form_for(:session, url: sessions_create2_path) do |f| %>
+                          <%= f.label "姓" %><br>
+                          <%= f.text_field :first_name,  placeholder: "姓(カタカナ)" %>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                          <%= f.label "名" %><br>
+                          <%= f.text_field :last_name,  placeholder: "名(カタカナ)" %>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                          <%= f.label "生年月日" %><br>
+                          <%= f.text_field :birthday %>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-12 col-sm-12">
+                       <%= f.submit "OK",  class: "btn btn-color" %><% end %>
+                      </div>
+                    </div>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+        </div>
+      </div>
+      
+      <!-- Main content ends -->
+      
+      <!-- Footer Starts -->
+      
+      <footer>
+        <!-- Container -->
+        <div class="container">
+          <!-- Footer Content -->
+            <!-- Paragraph -->
+            <p class="pull-right">Copyright &copy; 2014 - <a href="#">Aoba Clinic Group</a></p>
+            <!-- <ul class="list-inline pull-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="feature.html">Features</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul> -->
+            <!-- Clearfix -->
+            <div class="clearfix"></div>
+        </div>
+      </footer>
+      
+      <!-- Footer Ends -->
+    
+    </div>
+    
+    <!-- Outer Ends -->   
+    
+    <!-- Scroll to top -->
+    <span class="totop"><a href="#"><i class="fa fa-angle-up bg-color"></i></a></span>
+    
+    <!-- Javascript files -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Placeholders JS -->
+    <script src="js/placeholders.js"></script>
+    <!-- Universal mega menu menu -->
+    <script src="js/mgmenu.min.js"></script>
+    <script src="js/mgmenu_plugins.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Respond JS for IE8 -->
+    <script src="js/respond.min.js"></script>
+    <!-- HTML5 Support for IE -->
+    <script src="js/html5shiv.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    
+    <!-- Javascript for this page -->
+    
+    <!-- Custom JS. Type your JS code in custom.js file -->
+    <script src="js/custom.js"></script>
+    
+    
+    
+  </body> 
+</html>

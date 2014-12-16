@@ -1,22 +1,11 @@
-<h1>各施術項目入力</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>各施術項目入力</th>
-    </tr>
-  </thead>
+<% if current_user.first_time == 0 %>
+<%= render 'shared/specific_form' %>
+<% end %>
 
-  <tbody>
-    <% @oquestions.each do |oquestion| %>
-      <tr>
-        <td><%= oquestion.content %></td>
-        <td><%= link_to 'Show', oquestion %></td>
-        <!-- <td><%#= link_to 'Edit', edit_question_path(question) %></td> -->
-        <td><%= link_to 'Destroy', oquestion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>  
-  </tbody>
-</table>
-<%= link_to '次へ', answer_path %>
 
+<% if current_user.first_time == 1 %>
+<%= render 'shared/specific2_form' %>
+<% end %>
+
+<%= link_to "確認画面へ。", answer_path(@oquestions), id: "btn " %>

@@ -1,22 +1,38 @@
 ActiveAdmin.register User do
 
 
+
   form do |f|
     # users = User.where(body_part: 0, body_part:1, body_part: 2).limit(3)
     body = User.pluck(:body_part).uniq
     time = User.pluck(:first_time).uniq
+    operation = Operation.pluck(:name).uniq
       f.inputs "Details" do
-        f.input :operation_id, :as => :select, collection: Operation.all, :label => "施術内容"
+        f.input :operation_id, :as => :select, collection: operation, :label => "施術内容"
         f.input :email, :label => "Eメール"
         f.input :first_name, :label => "姓"
         f.input :last_name, :label => "名"
-        f.input :birthday, :label => "生年月日"
-        f.input :reserved_at, :label => "予約日"
+        f.input :birthday, :label => "誕生日", :start_year => Date.today.year - 100, :end_year => Date.today.year
+
+        f.input :reserved_at, :label => "予約日", :time_hour => Time.now
         f.input :body_part, :label => "部位", :as => :select, :collection => body
         f.input :first_time, :label => "初診or再診", :as => :select, :collection => time
-      end
+        # f.submit "Submit"
     end
+  end
 end
+
+
+# f.input :start_at, :as => :datetimepicker
+
+# f.input :born_at, :as => :just_datetime_picker
+
+ # f.input :birthday, :label => "誕生日", :start_year => Date.today.year - 100, :end_year => Date.today.year
+# , :label => "生年月日"
+
+ # f.input :date_of_birth, as: :date, start_year: Date.today.year - 90,
+ #                               end_year: Date.today.year - 12, discard_day: true,
+ #                               order: [:month, :year]
 
 # 'body_part >= ? AND body_part >= ? ', 1, 2
 # uniqueness: true

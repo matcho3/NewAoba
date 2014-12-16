@@ -34,6 +34,8 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'better_errors'
 gem 'binding_of_caller'
+gem "jquery-ui-rails"
+gem "just-datetime-picker"
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false

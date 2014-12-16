@@ -1,5 +1,5 @@
 class AnswersController < ApplicationController
-  before_action :set_answer, only: [:show, :edit, :update, :destroy]
+  before_action :set_answer, only: [ :edit, :update, :destroy]
 
   # GET /answers
   # GET /answers.json
@@ -7,12 +7,17 @@ class AnswersController < ApplicationController
     # @answers = Answer.all
     @answer = current_user.answers.build(answer_params)
     @answer.save
-
   end
 
   # GET /answers/1
   # GET /answers/1.json
   def show
+    # @answers = Answer.where(user_id: current_user.id)
+    # time = Time.now
+    @answers = current_user.answers
+    # Question.where(operation_id: nil)
+    # raise 'hi'
+    # @oquestions = current_user.operation.questions
   end
 
   # def answer

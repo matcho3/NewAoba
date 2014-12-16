@@ -1,11 +1,6 @@
 共通質問項目
 <div>◆以下の質問にご回答をお願いします◆</div>  
-1ヶ月以内にエステや病院で美容治療を受けましたか？
-
-
-<%#= form_tag ({:controller => "コントローラー名",:action => 'yyy（Ajax通信をキャッチするアクション名）'}), :remote => true, :id => 'new_entry' do %>
-
-
+<p>1ヶ月以内にエステや病院で美容治療を受けましたか？</p>
 <%= form_for(Question.find(1).answers.build) do |q| %>
   <%= q.hidden_field :question_id %>
   <%= q.radio_button(:content, "yes") %>
@@ -17,8 +12,7 @@
 <p>現在妊娠の可能性はありますか？</p>
 <%= form_for(Question.find(2).answers.build) do |q| %>
   <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
+  <%= q.radio_button(:content, "yes") %> <%= q.label :content, 'はい', :value => "yes" %>
   <%= q.radio_button(:content, "no") %>
   <%= q.label :content, 'いいえ', :value => "no" %>
 <% end %>

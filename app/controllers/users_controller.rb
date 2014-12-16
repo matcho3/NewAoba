@@ -21,10 +21,7 @@ class UsersController < ApplicationController
   def edit
   end
 
-
-
-
-
+  
   # create_table "answers", force: true do |t|
   #   t.text     "content"
   #   t.integer  "user_id"

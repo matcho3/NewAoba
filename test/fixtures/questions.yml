@@ -322,92 +322,230 @@ question_50:
   # 要記入questiontype23
 
 
+# 再診
+# 共通項目＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+question_51:
+  id: 51
+  content: 1ヶ月以内にエステや病院で美容治療を受けましたか？
+
+question_52:
+  id: 52
+  content: 3ヶ月以内に結婚式や肌を露出するような大事なイベントはありますか？　
+
+question_53:
+  id: 53
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
 
 
+# 追加表示＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+ # 要記入 
+ # 要記入 
 
 
-# question_40:
-#   id: 40
+# 脱毛＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+question_54:
+  id: 54
+  operation_id: 13
+  content: 1ヶ月以内に日焼けをしましたか？
+
+question_55:
+  id: 55
+  operation_id: 13
+  content: ・1ヶ月以内に毛抜きで処理をしましたか？
+
+question_56:
+  id: 56
+  operation_id: 13
+  content: 治療をご希望の部分に皮膚疾患はありますか？　
+
+question_57:
+  id: 57
+  operation_id: 13
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+
+# レーザートーニング＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+
+question_58:
+  id: 58
+  operation_id: 14
+  content: 1ヶ月以内に日焼けをしましたか？
+
+# フラクショナルレーザー＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+
+question_59:
+  id: 59
+  operation_id: 15
+  content: 1ヶ月以内に日焼けをしましたか？
+
+question_60:
+  id: 60
+  operation_id: 15
+  content: 治療をご希望の部分にひどい乾燥や皮むけなどはありますか？
+
+question_61:
+  id: 61
+  operation_id: 15
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+
+# サーマクール＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ 
+
+question_62:
+  id: 62
+  operation_id: 16
+  content: 1ヶ月以内に日焼けをしましたか？
+
+question_63:
+  id: 63
+  operation_id: 16
+  content: 治療をご希望の部分にニキビや皮むけなどの皮膚疾患はありますか？　
+
+question_64:
+  id: 64
+  operation_id: 16
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+
+# ルビーレーザー　CO2レーザー＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+question_65:
+  id: 65
+  operation_id: 17
+  content: 現在妊娠の可能性はありますか？
+
+question_66:
+  id: 66
+  operation_id: 17
+  content: 現在授乳中ですか？
+
+question_67:
+  id: 67
+  operation_id: 17
+  content: 現在治療中の病気はありますか？
+
+question_68:
+  id: 68
+  operation_id: 17
+  content: 現在外用薬、内服薬等をご使用中ですか？　
+
+question_69:
+  id: 69
+  operation_id: 17
+  content: ケロイド体質と診断されたことはありますか？
+
+question_70:
+  id: 70
+  operation_id: 17
+  content: 今までにアレルギー症状がでたことはありますか？
+
+question_71:
+  id: 71
+  operation_id: 17
+  content: 治療をご希望の部分に皮膚疾患はありますか？
+
+question_72:
+  id: 72
+  operation_id: 17
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+
+# ヒアルロン酸注射＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+question_73:
+  id: 73
+  operation_id: 18
+  content: 1ヶ月以内にヒアルロン酸注射を受けましたか？
+
+question_74:
+  id: 74
+  operation_id: 18
+  content: 現在妊娠の可能性はありますか？
+
+question_75:
+  id: 75
+  operation_id: 18
+  content: 現在授乳中ですか？
+
+question_76:
+  id: 76
+  operation_id: 18
+  content: 現在治療中の病気はありますか？
+
+question_77:
+  id: 77
+  operation_id: 18
+  content: 現在外用薬、内服薬等をご使用中ですか？
+
+
+question_78:
+  id: 78
+  operation_id: 18
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+
+# ボトックス注射＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+question_79:
+  id: 79
+  operation_id: 19
+  content: 1ヶ月以内にボトックス注射を受けましたか？
+
+question_80:
+  id: 80
+  operation_id: 19
+  content: 現在妊娠の可能性はありますか？
+
+question_81:
+  id: 81
+  operation_id: 19
+  content: 現在授乳中ですか？
+
+question_82:
+  id: 82
+  operation_id: 19
+  content: 現在治療中の病気はありますか？
+
+question_83:
+  id: 83
+  operation_id: 19
+  content: 現在外用薬、内服薬等をご使用中ですか？
+
+question_84:
+  id: 84
+  operation_id: 19
+  content: ◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆
+
+# question_86:
+#   id: 86
 #   operation_id: 
 #   content:
 
-# question_41:
-#   id: 41
+# question_87:
+#   id: 87
 #   operation_id: 
 #   content:
 
-# question_42:
-#   id: 42
+# question_88:
+#   id: 88
 #   operation_id: 
 #   content:
 
-# question_43:
-#   id: 43
+# question_89:
+#   id: 89
 #   operation_id: 
 #   content:
 
-# question_44:
-#   id: 44
+# question_90:
+#   id: 90
 #   operation_id: 
 #   content:
 
-# question_45:
-#   id: 45
+# question_91:
+#   id: 91
 #   operation_id: 
 #   content:
 
-# question_46:
-#   id: 46
-#   operation_id: 
-#   content:
-
-# question_47:
-#   id: 47
-#   operation_id: 
-#   content:
-
-# question_48:
-#   id: 48
-#   operation_id: 
-#   content:
-
-# question_49:
-#   id: 49
-#   operation_id: 
-#   content:
-
-# question_50:
-#   id: 50
-#   operation_id: 
-#   content:
-
-# question_:
-#   id: 
-#   operation_id: 
-#   content:
-
-# question_:
-#   id: 
-#   operation_id: 
-#   content:
-
-# question_:
-#   id: 
-#   operation_id: 
-#   content:
-
-# question_:
-#   id: 
-#   operation_id: 
-#   content:
-
-# question_:
-#   id: 
-#   operation_id: 
-#   content:
-
-# question_:
-#   id: 
+# question_92:
+#   id: 92
 #   operation_id: 
 #   content:
 

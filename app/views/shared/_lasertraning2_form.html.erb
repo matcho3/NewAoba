@@ -1,0 +1,15 @@
+<h2>再診</h2>
+<h2>レーザートレーニング</h2>
+
+
+<p>1ヶ月以内に日焼けをしましたか？</p>
+<%= form_for(Question.find(58).answers.build) do |q| %>
+  <%= q.hidden_field :question_id %>
+  <%= q.radio_button(:content, "yes") %>
+  <%= q.label :content, 'はい', :value => "yes" %>
+  <%= q.radio_button(:content, "no") %>
+  <%= q.label :content, 'いいえ', :value => "no" %>
+<% end %>
+
+ <div id="btn">次へ</div>
+<%#= link_to '次へ', id: "btn" %>

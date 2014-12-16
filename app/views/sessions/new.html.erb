@@ -12,19 +12,18 @@
     
     <!-- Styles -->
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Font awesome CSS -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <!-- Universal Mega menu -->
-    <link href="css/mgmenu.min.css" rel="stylesheet">
+    
     <!-- Magnific Popup -->
-    <link href="css/magnific-popup.css" rel="stylesheet">
+    
     <!-- Owl carousel -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/styles/medical.css" rel="stylesheet">
-    <link href="css/styles/style.css" rel="stylesheet">
-    <link href="css/styles/skin-red.css" rel="stylesheet" id="color_theme">
-    <link href="css/custom.css" rel="stylesheet">
+
+    
     <link rel="shortcut icon" href="#">
   </head>
   
@@ -81,9 +80,6 @@
           </div>
         </div>
 
-
-
-
 <div class="container">
           <div class="medical">
             <div class="medic-appoint">
@@ -91,24 +87,38 @@
                 <div class="col-md-8 col-sm-8 col-md-offset-2">
                   
                   <div class="block-heading-two">
-                    <h3><span>予約情報入力</span></h3>
+                    <h3><span>予約情報入力</span>
                   </div>
-                  
+                  <%= flash[:alert] %></h3>
                   <!-- Appointment content -->
+                  <%= form_for(:session, url: sessions_path) do |f| %>
+                  
                   <form role="form">
                     <div class="row">
                       <div class="col-md-6 col-sm-6">
-                        <div class="form-group">
-                          <%= form_for(:session, url: sessions_path) do |f| %>
+                          <div class="form-group">
+                          <%#= form_for(@foo, :url => {:controller => :bars, :action => :update}) do |f| %>
                           <%= f.label "予約番号" %><br>
                           <%= f.text_field :reservation_id %>
                         </div>
                       </div>
                       <div class="col-md-6 col-sm-6">
-                        <div class="form-group">
-
-                           <%= f.label "生年月日" %><br>
-                           <%= f.date_field :birthday %>
+                        <!-- <div class="form-group"> -->
+                           <div class="form-group birthday">
+                            <!-- <div>生年月日</div> -->
+                            <%#= f.label  class: "contact-label" %>
+                            <%= f.label "生年月日" %><br>
+                            <%= raw sprintf(
+                                f.date_select(
+                                :birthday,
+                                {use_month_numbers: true,
+                                start_year:        1920,
+                                end_year:          2014,
+                                default:           Date.new(1992, 1, 1),
+                                date_separator:    '%s'},
+                                class: "form-control"),
+                                '年 ', '月 ') + '日' %>
+                            </div><!--//form-group-->
                         </div>
                       </div>
                       
@@ -131,19 +141,18 @@
 
 
 
-
-<div class="col-md-8 col-sm-8 col-md-offset-2" style="padding-top: 100px; padding-bottom: 100px">
+                  <div class="col-md-8 col-sm-8 col-md-offset-2" style="padding-top: 100px; padding-bottom: 100px">
                   <div class="block-heading-two">
                     <h3><span>予約番号を忘れてしまった方はこちら</span></h3>
                   </div>
 
                   <!-- Appointment content -->
+                  <%= form_for(:session, url: sessions_path) do |f| %>
+                  <%#= render 'shared/error_messages', object: f.object %>
                   <form role="form">
                     <div class="row">
-                      
                       <div class="col-md-6 col-sm-6">
                         <div class="form-group">
-                          <%= form_for(:session, url: sessions_create2_path) do |f| %>
                           <%= f.label "姓" %><br>
                           <%= f.text_field :first_name,  placeholder: "姓(カタカナ)" %>
                         </div>
@@ -155,9 +164,19 @@
                         </div>
                       </div>
                       <div class="col-md-6 col-sm-6">
-                        <div class="form-group">
+                        <div class="form-group birthday">
                           <%= f.label "生年月日" %><br>
-                          <%= f.text_field :birthday %>
+                            <%= raw sprintf(
+                                f.date_select(
+                                :birthday,
+                                {use_month_numbers: true,
+                                start_year:        1920,
+                                end_year:          2014,
+                                default:           Date.new(1992, 1, 1),
+                                date_separator:    '%s'},
+                                class: "form-control"),
+                                '年 ', '月 ') + '日' %>
+                            </div><!--//form-group-->
                         </div>
                       </div>
                       
@@ -207,31 +226,6 @@
     <span class="totop"><a href="#"><i class="fa fa-angle-up bg-color"></i></a></span>
     
     <!-- Javascript files -->
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <!-- Placeholders JS -->
-    <script src="js/placeholders.js"></script>
-    <!-- Universal mega menu menu -->
-    <script src="js/mgmenu.min.js"></script>
-    <script src="js/mgmenu_plugins.js"></script>
-    <!-- Magnific Popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Owl carousel -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Respond JS for IE8 -->
-    <script src="js/respond.min.js"></script>
-    <!-- HTML5 Support for IE -->
-    <script src="js/html5shiv.js"></script>
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
-    
-    <!-- Javascript for this page -->
-    
-    <!-- Custom JS. Type your JS code in custom.js file -->
-    <script src="js/custom.js"></script>
-    
     
     
   </body> 

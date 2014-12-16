@@ -1,101 +1,11 @@
-<% @oquestions.first(1).each do |oquestion| %>
-<!-- @posts.first(3).each do |post| -->
-  
-<% if oquestion.operation_id == 1 %>
-<%= render 'shared/eclisis_form' %>
+
+<% if current_user.first_time == 0 %>
+<%= render 'shared/specific_form' %>
 <% end %>
 
 
-
-
-
-<% if oquestion.operation_id == 2 %>
-<%= render 'shared/ultra_accent_form' %>
+<% if current_user.first_time == 1 %>
+<%= render 'shared/specific2_form' %>
 <% end %>
 
-
-
-
-<% if oquestion.operation_id == 3 %>
-<%= render 'shared/tenole_form' %>
-<% end %>
-
-
-
-<% if oquestion.operation_id == 4 %>
-<%= render 'shared/zeltic_form' %>
-<% end %>
-
-
-
-
-
-<% if oquestion.operation_id == 5 %>
-<%= render 'shared/electroportion_form' %>
-<% end %>
-
-
-
-
-
-<% if oquestion.operation_id == 6 %>
-<%= render 'shared/datsumou_form' %>
-<% end %>
-
-
-
-
-
-<% if oquestion.operation_id == 7 %>
-<%= render 'shared/lasertraning_form' %>
-<% end %>
-
-
-
-
-
-<% if oquestion.operation_id == 8 %>
-<%= render 'shared/fractional_form' %>
-<% end %>
-
-
-
-
-
-<% if oquestion.operation_id == 9 %>
-<%= render 'shared/sarmacool_form' %>
-<% end %>
-
-
-
-
-
-<% if oquestion.operation_id == 10 %>
-<%= render 'shared/rubylaser_form' %>
-<% end %>
-
-
-
-
-
-<% if oquestion.operation_id == 11 %>
-<%= render 'shared/hiaruronsan_form' %>
-<% end %>
-
-
-
-
-<% if oquestion.operation_id == 12 %>
-<%= render 'shared/botox_form' %>
-<% end %>
-
-<% end %> 
-
-
-
-
-
-
-
-
-
+<%= link_to "確認画面へ。", answer_path(@oquestions), id: "btn " %>

@@ -1,11 +1,12 @@
+
+<% if current_user.first_time == 0 %>
 <%= render 'shared/common_form' %>
+<% end %>
 
 
-
-<%= link_to '次へ', operations_path,  class: "btn"
- %>
-
-
+<% if current_user.first_time == 1 %>
+<%= render 'shared/common2_form' %>
+<% end %>
 
 
 

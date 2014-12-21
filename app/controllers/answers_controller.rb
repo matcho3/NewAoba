@@ -1,25 +1,33 @@
 class AnswersController < ApplicationController
-  before_action :set_answer, only: [:show, :edit, :update, :destroy]
+  before_action :set_answer, only: [ :edit, :update, :destroy]
 
   # GET /answers
   # GET /answers.json
   def index
-    @answers = Answer.all
-    
+    # @answers = Answer.all
+    @answer = current_user.answers.build(answer_params)
+    @answer.save
   end
 
   # GET /answers/1
   # GET /answers/1.json
   def show
+    # @answers = Answer.where(user_id: current_user.id)
+    # time = Time.now
+    @answers = current_user.answers
+    # Question.where(operation_id: nil)
+    # raise 'hi'
+    # @oquestions = current_user.operation.questions
   end
 
-  def answer
-    # @answer = Answer.new
-    # @answer.user_id = current_user.id
-    # current_user.operation.questions.each do |question|
-    # @answer.question_id = question.id
-    # @answer.save
-  end
+  # def answer
+  #   # @answer = Answer.new
+  #   @answer.user_id = current_user.id
+
+  #   # current_user.operation.questions.each do |question|
+  #   # @answer.question_id = question.id
+  #   # @answer.save
+  # end
 
 
   # create_table "answers", force: true do |t|
@@ -39,8 +47,6 @@ class AnswersController < ApplicationController
 
 
 
-
-
 # def new
 #      @book = Book.new
 #      @book.build_author
@@ -51,40 +57,80 @@ class AnswersController < ApplicationController
 #   end
 
 
-
-
-
-
-
-
-
-
-
-
   # GET /answers/1/edit
   def edit
   end
 
   # POST /answers
   # POST /answers.json
-  def create
-    @answer = Answer.new(answer_params)
 
-    respond_to do |format|
-      if @answer.save
-        format.html { redirect_to @answer, notice: 'Answer was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @answer }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @answer.errors, status: :unprocessable_entity }
-      end
+
+
+  def create
+    # @answer = Answer.new
+    # @answer.user_id = current_user.もid
+    # @answer.question_id = params[:question_id]
+    # @answer.content = params[:content]
+    # @answer.save
+    # 一個保存できれば、何個でも保存できる
+    @answer = current_user.answers.build(answer_params)
+    @answer.save
     end
-  end
+
+# @search_word = params[:word]
+
+
+  # @answer = Answer.new
+    # @answer.user_id = current_user.id
+
+    # current_user.operation.questions.each do |question|
+    # @answer.question_id = question.id
+    # @answer.save
+
+
+
+
+
+# def create
+#         @post = current_user.posts.build(strong_params)
+#         if @post.save
+#             redirect_to @post
+#         else
+#             render 'new'
+#         end
+#     end
+
+#     def create_temp
+#         @post = current_user.posts.build(strong_params)
+#         @post.published = false
+#         @post.save
+#     end
+
+
+
+
+
+# def book
+#       # @trip = Trip.find(params[:id])
+#       # @book = Book.new
+#       # @book.user_id = current_user.id 
+#       # @book.trip_id = @trip.id
+#       # @book.save
+#       @book = current_user.books.create(trip_id: @trip.id)
+#       @book.save
+#         flash[:success] = "Your book request has been confirmed!!"
+#     end
+
+
+
+
+
+
+
 
   # PATCH/PUT /answers/1
   # PATCH/PUT /answers/1.json
   def update
-
     # @answer = Answer.find(params[:id])
     # @question = Question.find(params[:question_id][:answer_id])
 
@@ -128,4 +174,5 @@ class AnswersController < ApplicationController
     def question_params
       params.require(:question).permit(:content)
     end
+
 end

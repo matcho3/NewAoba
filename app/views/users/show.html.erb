@@ -1,49 +1,51 @@
 <p id="notice"><%= notice %></p>
 
+
 <p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
+  <% if current_user.first_time == 0 %>
+  <%= '初診' %>
+  <% else %>
+  <%= '再診' %>
+  <% end %>
 </p>
 
 <p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
-
-<p>
-  <strong>Birthday:</strong>
-  <%= @user.birthday %>
-</p>
-
-<p>
-  <strong>Reserved at:</strong>
-  <%= @user.reserved_at %>
-</p>
-
-<p>
-  <strong>Operation:</strong>
-  <%= @user.operation_id %>
-</p>
-
-<p>
-  <strong>Body part:</strong>
-  <%= @user.body_part %>
-</p>
-
-<p>
-  <strong>First time:</strong>
-  <%= @user.first_time %>
-</p>
-
-<p>
-  <strong>Reservation:</strong>
+  <strong>予約番号</strong>
   <%= @user.reservation_id %>
 </p>
 
 <p>
-  <strong>Url:</strong>
-  <%= @user.URL %>
+  <strong>お名前</strong>
+  <%= @user.first_name %><%= @user.last_name %>様
 </p>
+
+<p>
+  <strong>生年月日</strong>
+  <%#= @user. %>
+<%= @user.birthday.strftime('%Y年%m月%d日') %>
+</p>
+
+<p>
+  <strong>予約日時</strong>
+  <%= @user.reserved_at %>
+</p>
+
+<p>
+  <strong>施術内容</strong>
+  <%= @user.operation.name %>
+</p>
+
+<p>
+  <strong>部位</strong>
+  <%= @user.body_part %>
+</p>
+
+
+
+<!-- <p>
+  <strong>Url:</strong>
+  <%#= @user.URL %>
+</p> -->
 
 <h2>この内容に、お間違いありませんか？</h2>
 <%= link_to 'OK', questions_path %> |

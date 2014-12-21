@@ -1,0 +1,355 @@
+<!-- 共通質問項目 -->
+<div>◆以下の質問にご回答をお願いします◆</div>  
+<p>1ヶ月以内にエステや病院で美容治療を受けましたか？</p>
+<%= form_for(Question.find(1).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>現在妊娠の可能性はありますか？</p>
+<%= form_for(Question.find(2).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>現在授乳中ですか？　</p>
+<%= form_for(Question.find(3).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>現在授乳中ですか？　</p>
+<%= form_for(Question.find(3).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>金属糸、金属プレート、金属ボルト、ペースメーカー、埋込式除細動器、金製剤の服用歴等、体内に金属類はございませんか？</p>
+<%= form_for(Question.find(4).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>現在治療中の病気はありますか？　</p>
+<%= form_for(Question.find(5).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>現在外用薬、内服薬等をご使用中ですか？　</p>
+<%= form_for(Question.find(6).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>ケロイド体質と診断されたことはありますか？</p>
+<%= form_for(Question.find(7).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>ヘルペスの既往歴はありますか？</p>
+<%= form_for(Question.find(8).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>今までにアレルギー症状がでたことはありますか？</p>
+<%= form_for(Question.find(9).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>3ヶ月以内に結婚式や肌を露出するような大事なイベントはありますか？</p>
+<%= form_for(Question.find(10).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
+<%= form_for(Question.find(11).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>◆何をご覧になってご予約頂きましたか？◆</p>
+<%= form_for(Question.find(12).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<br>
+<p>◆クーポンをご利用の方は以下の項目に入力をお願いします◆</p>
+<%= form_for(Question.find(13).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+<!-- 共通項目入力終了 -->
+
+
+
+
+
+
+<!-- エクリシス -->
+<p>エクシリスのご経験はありますか？</p>
+<%= form_for(Question.find(14).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>治療をご希望の部分に皮膚疾患はありますか？</p>
+<%= form_for(Question.find(15).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+
+<!-- ウルトラアクセント -->
+<p>ウルトラアクセントのご経験はありますか？</p>
+<%= form_for(Question.find(16).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+<p>治療をご希望の部分に皮膚疾患はありますか？</p>
+<%= form_for(Question.find(17).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+<!-- テノール -->
+<p>テノールのご経験はありますか？</p>
+<%= form_for(Question.find(18).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>治療をご希望の部分に皮膚疾患はありますか？</p>
+<%= form_for(Question.find(19).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+
+<!-- ゼルティック -->
+<p>ゼルティックのご経験はありますか？</p>
+<%= form_for(Question.find(20).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+<p>現在外用薬、内服薬等をご使用中ですか？</p>
+<%= form_for(Question.find(21).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+
+<!-- エレクトロポレーション -->
+<p>エレクトロポレーションのご経験はありますか？</p>
+<%= form_for(Question.find(22).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+<p>治療をご希望の部分に皮膚疾患はありますか？</p>
+<%= form_for(Question.find(23).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+
+
+
+
+
+
+
+<!-- 脱毛 -->
+<p>脱毛のご経験はありますか？</p>
+<%= form_for(Question.find(24).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>1ヶ月以内に日焼けをしましたか？</p>
+<%= form_for(Question.find(25).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>1ヶ月以内に毛抜きで処理をしましたか？</p>
+<%= form_for(Question.find(26).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>治療をご希望の部分に皮膚疾患はありますか？</p>
+<%= form_for(Question.find(27).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
+<%= form_for(Question.find(28).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+
+
+
+
+<!-- レーザートーニング -->
+
+<p>レーザートーニングのご経験はありますか？</p>
+<%= form_for(Question.find(29).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>1ヶ月以内に日焼けをしましたか？</p>
+<%= form_for(Question.find(30).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>治療をご希望の部分に皮膚疾患はありますか？</p>
+<%= form_for(Question.find(31).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
+<%= form_for(Question.find(32).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+<!-- フラクショナルレーザー -->
+<p>フラクショナルレーザーのご経験はありますか？</p>
+<%= form_for(Question.find(33).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>1ヶ月以内に日焼けをしましたか？</p>
+<%= form_for(Question.find(34).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>治療をご希望の部分にひどい乾燥や皮むけなどはありますか？</p>
+<%= form_for(Question.find(35).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
+<%= form_for(Question.find(36).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+
+<!-- サーマクール -->
+
+<p>サーマクールのご経験はありますか？</p>
+<%= form_for(Question.find(37).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>1ヶ月以内に日焼けをしましたか？</p>
+<%= form_for(Question.find(38).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>治療をご希望の部分にニキビや皮むけなどの皮膚疾患はありますか？</p>
+<%= form_for(Question.find(39).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
+<%= form_for(Question.find(40).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+
+
+
+<!-- ルビーレーザー　CO2レーザー -->
+<p>シミやホクロ取りレーザーのご経験はありますか？</p>
+<%= form_for(Question.find(41).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>1ヶ月以内に日焼けをしましたか？</p>
+<%= form_for(Question.find(42).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>治療をご希望の部分に皮膚疾患はありますか？</p>
+<%= form_for(Question.find(43).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
+<%= form_for(Question.find(44).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+
+
+
+<!-- ヒアルロン酸注射 -->
+<p>ヒアルロン酸注射のご経験はありますか？</p>
+<%= form_for(Question.find(45).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>治療をご希望の部分に皮膚疾患はありますか？</p>
+<%= form_for(Question.find(46).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
+<%= form_for(Question.find(47).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+
+
+
+
+<!-- ボトックス注射 -->
+<p>ボトックス注射のご経験はありますか？</p>
+<%= form_for(Question.find(48).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+<p>治療をご希望の部分に皮膚疾患はありますか？</p>
+<%= form_for(Question.find(49).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
+<%= form_for(Question.find(50).answers.build) do |q| %>
+  <%= q.select_tag %>はい,
+  <%= q.select_tag %>いいえ
+<% end %>
+
+
+
+
+
+
+
+
+
+
+

@@ -10,87 +10,284 @@
 # user_: {}
 #  column: value
 
+#消していく。うまくいくか調べる。
+# エラー内容ググる。
+#表示されるエラー箇所調べる。デバッグしようとする。
+
 
 user_1:
   id: 1
   reservation_id: 1
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 1
   email: sample1@icloud.com
+  first_time: 0
+  body_part: 0
 
 user_2:
   id: 2
   reservation_id: 2
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 2
   email: sample2@gmail.com
+  first_time: 0
+  body_part: 1
 
 user_3:
   id: 3
   reservation_id: 3
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 3
   email: sample3@icloud.com
+  first_time: 0
+  body_part: 2
 
 user_4:
   id: 4
   reservation_id: 4
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 4
   email: sample4@gmail.com
+  first_time: 0
+  body_part: 0
 
 user_5:
   id: 5
   reservation_id: 5
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 5
   email: sample5@icloud.com
+  first_time: 0
+  body_part: 1
 
 user_6:
   id: 6
   reservation_id: 6
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 6
   email: sample6@gmail.com
+  first_time: 0
+  body_part: 2
 
 user_7:
   id: 7
   reservation_id: 7
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 7
   email: sample7@icloud.com
+  first_time: 0
+  body_part: 0
 
 user_8:
   id: 8
   reservation_id: 8
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 8
   email: sample8@gmail.com
+  first_time: 0
+  body_part: 1
 
 user_9:
   id: 9
   reservation_id: 9
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 9
   email: sample9@icloud.com
+  first_time: 0
+  body_part: 2
 
 user_10:
   id: 10
   reservation_id: 10
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 10
   email: sample10@gmail.com
+  first_time: 0
+  body_part: 0
 
 user_11:
   id: 11
   reservation_id: 11
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 11
   email: sample11@icloud.com
+  first_time: 0
+  body_part: 1
 
 user_12:
   id: 12
   reservation_id: 12
-  birthday: 2014/12/19
+  birthday: 2014-12-19
   operation_id: 12
   email: sample12@gmail.com
+  first_time: 0
+  body_part: 2
+# 再診患者********************************
+
+user_13:
+  id: 13
+  reservation_id: 13
+  birthday: 2014-12-19
+  operation_id: 13
+  email: sample13@gmail.com
+  first_time: 1
+  body_part: 0
+
+user_14:
+  id: 14
+  reservation_id: 14
+  birthday: 2014-12-19
+  operation_id: 14
+  email: sample14@gmail.com
+  first_time: 1
+  body_part: 1
+
+user_15:
+  id: 15
+  reservation_id: 15 
+  birthday: 2014-12-19
+  operation_id: 15
+  email: sample15@gmail.com
+  first_time: 1
+  body_part: 2
+
+user_16:
+  id: 16
+  reservation_id: 16
+  birthday: 2014-12-19
+  operation_id: 16
+  email: sample16@gmail.com
+  first_time: 1
+  body_part: 0
+
+user_17:
+  id: 17
+  reservation_id: 17
+  birthday: 2014-12-19
+  operation_id: 17
+  email: sample17@gmail.com
+  first_time: 1
+  body_part: 1
+
+user_18:
+  id: 18
+  reservation_id: 18
+  birthday: 2014-12-19
+  operation_id: 18
+  email: sample18@gmail.com
+  first_time: 1
+  body_part: 2
+
+user_19:
+  id: 19
+  reservation_id: 19
+  birthday: 2014-12-19
+  operation_id: 19
+  email: sample19@gmail.com
+  first_time: 1
+  body_part: 0
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+
+# user_:
+#   id: 
+#   reservation_id: 
+#   birthday: 2014-12-19
+#   operation_id: 
+#   email: sample12@gmail.com
+#   first_time: 1
+

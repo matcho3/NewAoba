@@ -47,3 +47,96 @@ operation_11:
 operation_12:
   id: 12
   name: ボトックス注射
+
+# 再診患者用**************************
+
+operation_13:
+  id: 13
+  name: 脱毛
+
+operation_14:
+  id: 14
+  name: レーザートーニング
+
+operation_15:
+  id: 15
+  name: フラクショナルレーザー
+
+operation_16:
+  id: 16
+  name: サーマクール
+
+operation_17:
+  id: 17
+  name: ルビーレーザー　CO2レーザー
+
+operation_18:
+  id: 18
+  name: ヒアルロン酸注射
+
+operation_19:
+  id: 19
+  name: ボトックス注射
+
+# operation_20:
+#   id: 20
+#   name:
+
+# operation_21:
+#   id: 21
+#   name:
+
+# operation_22:
+#   id: 22
+#   name:
+
+# operation_23:
+#   id: 23
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+
+

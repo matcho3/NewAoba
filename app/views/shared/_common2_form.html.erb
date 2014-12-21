@@ -1,0 +1,32 @@
+<h3>再診</h3>
+<h3>共通質問項目</h3>
+<div>◆以下の質問にご回答をお願いします◆</div>
+
+<p>1ヶ月以内にエステや病院で美容治療を受けましたか？</p>
+<%= form_for(Question.find(51).answers.build) do |q| %>
+  <%= q.hidden_field :question_id %>
+  <%= q.radio_button(:content, "yes") %>
+  <%= q.label :content, 'はい', :value => "yes" %>
+  <%= q.radio_button(:content, "no") %>
+  <%= q.label :content, 'いいえ', :value => "no" %>
+<% end %>
+<br>
+<p>3ヶ月以内に結婚式や肌を露出するような大事なイベントはありますか？</p>
+<%= form_for(Question.find(52).answers.build) do |q| %>
+  <%= q.hidden_field :question_id %>
+  <%= q.radio_button(:content, "yes") %>
+  <%= q.label :content, 'はい', :value => "yes" %>
+  <%= q.radio_button(:content, "no") %>
+  <%= q.label :content, 'いいえ', :value => "no" %>
+<% end %>
+<br>
+<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
+<%= form_for(Question.find(53).answers.build) do |q| %>
+  <%= q.hidden_field :question_id %>
+  <%= q.radio_button(:content, "yes") %>
+  <%= q.label :content, 'はい', :value => "yes" %>
+  <%= q.radio_button(:content, "no") %>
+  <%= q.label :content, 'いいえ', :value => "no" %>
+<% end %>
+
+<%= link_to '次へ', operations_path,  id: "btn" %>

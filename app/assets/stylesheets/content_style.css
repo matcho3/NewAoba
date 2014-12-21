@@ -230,8 +230,8 @@
 			background-position:left bottom;
 		}
 			.radio-group td label {
-				display:block;
-				float:left;
+				/*display:block;
+				float:left;*/
 				padding:10px 0;
 			}
 

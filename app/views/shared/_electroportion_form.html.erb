@@ -1,21 +1,7 @@
-<!-- エレクトロポレーション -->
-<p>エレクトロポレーションのご経験はありますか？</p>
-<%= form_for(Question.find(22).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
+<!-- エレクトロポーション -->
+<%= render partial: 'question_form', locals: {id: 22, text: "エレクトロポレーションのご経験はありますか？"} %>
 
-<p>治療をご希望の部分に皮膚疾患はありますか？</p>
-<%= form_for(Question.find(23).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
+<%= render partial: 'question_form', locals: {id: 23, text: "治療をご希望の部分に皮膚疾患はありますか？"} %>
 
 <%#= link_to '次へ', answer_path %>
 <%= link_to '次へ', id: "btn" %>

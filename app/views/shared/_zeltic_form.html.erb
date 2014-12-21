@@ -1,22 +1,10 @@
 <!-- ゼルティック -->
-<p>ゼルティックのご経験はありますか？</p>
-<%= form_for(Question.find(20).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
 
 
-<p>現在外用薬、内服薬等をご使用中ですか？</p>
-<%= form_for(Question.find(21).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
+<%= render partial: 'question_form', locals: {id: 20, text: "ゼルティックのご経験はありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 21, text: "現在外用薬、内服薬等をご使用中ですか？"} %>
+
 
 <%#= link_to '次へ', answer_path %>
 <div id="btn">次へ</div>

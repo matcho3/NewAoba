@@ -1,28 +1,9 @@
 <!-- ヒアルロン酸注射 -->
-<p>ヒアルロン酸注射のご経験はありますか？</p>
-<%= form_for(Question.find(45).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>治療をご希望の部分に皮膚疾患はありますか？</p>
-<%= form_for(Question.find(46).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
-<%= form_for(Question.find(47).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
 
+<%= render partial: 'question_form', locals: {id: 45, text: "ヒアルロン酸注射のご経験はありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 46, text: "治療をご希望の部分に皮膚疾患はありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 47, text: "◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆"} %>
 <%#= link_to '次へ', answer_path %>
 <%= link_to '次へ', id: "btn" %>

@@ -2,30 +2,12 @@
 <h2>フラクショナルレーザー</h2>
 
 
-<p>1ヶ月以内に日焼けをしましたか？</p>
-<%= form_for(Question.find(59).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>治療をご希望の部分にひどい乾燥や皮むけなどはありますか？</p>
-<%= form_for(Question.find(60).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
-<%= form_for(Question.find(61).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
+<!-- フラクショナルレーザ -->
 
+<%= render partial: 'question_form', locals: {id: 59, text: "1ヶ月以内に日焼けをしましたか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 60, text: "治療をご希望の部分にひどい乾燥や皮むけなどはありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 61, text: "◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆"} %>
 <%#= link_to '次へ', answer_path %>
 <%= link_to '次へ', id: "btn" %>

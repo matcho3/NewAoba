@@ -1,129 +1,38 @@
 共通質問項目
-<div>◆以下の質問にご回答をお願いします◆</div>  
-<p>1ヶ月以内にエステや病院で美容治療を受けましたか？</p>
-<%= form_for(Question.find(1).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>現在妊娠の可能性はありますか？</p>
-<%= form_for(Question.find(2).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %> <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>現在授乳中ですか？　</p>
-<%= form_for(Question.find(3).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>現在授乳中ですか？　</p>
-<%= form_for(Question.find(3).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>金属糸、金属プレート、金属ボルト、ペースメーカー、埋込式除細動器、金製剤の服用歴等、体内に金属類はございませんか？</p>
-<%= form_for(Question.find(4).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>現在治療中の病気はありますか？　</p>
-<%= form_for(Question.find(5).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>現在外用薬、内服薬等をご使用中ですか？　</p>
-<%= form_for(Question.find(6).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>ケロイド体質と診断されたことはありますか？</p>
-<%= form_for(Question.find(7).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>ヘルペスの既往歴はありますか？</p>
-<%= form_for(Question.find(8).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>今までにアレルギー症状がでたことはありますか？</p>
-<%= form_for(Question.find(9).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>3ヶ月以内に結婚式や肌を露出するような大事なイベントはありますか？</p>
-<%= form_for(Question.find(10).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
-<%= form_for(Question.find(11).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>◆何をご覧になってご予約頂きましたか？◆</p>
-<%= form_for(Question.find(12).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<br>
-<p>◆クーポンをご利用の方は以下の項目に入力をお願いします◆</p>
-<%= form_for(Question.find(13).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
+
+<!-- 共通質問フォーム -->
+
+
+<%= render partial: 'question_form', locals: {id: 1, text: "1ヶ月以内にエステや病院で美容治療を受けましたか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 2, text: "現在妊娠の可能性はありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 3, text: "現在授乳中ですか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 4, text: "金属糸、金属プレート、金属ボルト、ペースメーカー、埋込式除細動器、金製剤の服用歴等、体内に金属類はございませんか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 5, text: "現在治療中の病気はありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 6, text: "現在外用薬、内服薬等をご使用中ですか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 7, text: "ケロイド体質と診断されたことはありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 8, text: "ヘルペスの既往歴はありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 9, text: "今までにアレルギー症状がでたことはありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 10, text: "3ヶ月以内に結婚式や肌を露出するような大事なイベントはありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 11, text: "◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆"} %>
+
+<%= render partial: 'question_form', locals: {id: 12, text: "◆何をご覧になってご予約頂きましたか？◆"} %>
+
+<%= render partial: 'question_form', locals: {id: 13, text: "◆クーポンをご利用の方は以下の項目に入力をお願いします◆"} %>
+
+
+<!-- 共通質問フォーム　終了 -->
+
+
 
 <!-- <br>
 <br>

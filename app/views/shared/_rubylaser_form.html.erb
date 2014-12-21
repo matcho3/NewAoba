@@ -1,36 +1,12 @@
-<!-- ルビーレーザー　CO2レーザー -->
-<p>シミやホクロ取りレーザーのご経験はありますか？</p>
-<%= form_for(Question.find(41).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>1ヶ月以内に日焼けをしましたか？</p>
-<%= form_for(Question.find(42).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>治療をご希望の部分に皮膚疾患はありますか？</p>
-<%= form_for(Question.find(43).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
-<%= form_for(Question.find(44).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
+<!-- ルビーレーザー　CO2レーザー rubylaser_form -->
+
+<%= render partial: 'question_form', locals: {id: 41, text: "シミやホクロ取りレーザーのご経験はありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 42, text: "1ヶ月以内に日焼けをしましたか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 43, text: "治療をご希望の部分に皮膚疾患はありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 44, text: "◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆"} %>
 
 <%#= link_to '次へ', answer_path %>
 <%= link_to '次へ', id: "btn" %>

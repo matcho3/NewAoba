@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   
 
   root 'sessions#new'
+  # root 'about#index'
   match '/signout',to:'sessions#destroy',via:'delete'
   # match '/sendmail',to:'items#mail_send',via:'get'
    # match '/confirm/:id',to:'users#confirm', as:'user_confirm', via:'get'

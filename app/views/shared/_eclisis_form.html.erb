@@ -1,20 +1,8 @@
-<!-- エクリシス -->
-<p>エクシリスのご経験はありますか？</p>
-<%= form_for(Question.find(14).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>治療をご希望の部分に皮膚疾患はありますか？</p>
-<%= form_for(Question.find(15).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
+<!-- エクリシスフォーム -->
+
+<%= render partial: 'question_form', locals: {id: 14, text: "エクシリスのご経験はありますか？"} %>
+
+<%= render partial: 'question_form', locals: {id: 15, text: "治療をご希望の部分に皮膚疾患はありますか？"} %>
 
  <%#= link_to '次へ', id: "btn" %>
  <div id="btn">次へ</div>

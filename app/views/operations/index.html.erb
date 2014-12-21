@@ -7,5 +7,6 @@
 <% if current_user.first_time == 1 %>
 <%= render 'shared/specific2_form' %>
 <% end %>
-
-<%= link_to "確認画面へ。", answer_path(@oquestions), id: "btn " %>
+<hr>
+<h4>全ての項目にご回答頂いた事を確認して、</h4>
+<h4>送信ボタンをクリックしてください<h3><%= link_to "送信", sendmail_path, id: "btn " %></h3></h4><br><br><br>

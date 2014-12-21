@@ -23,6 +23,7 @@ ActiveAdmin.register User do
 end
 
 
+
 # f.input :start_at, :as => :datetimepicker
 
 # f.input :born_at, :as => :just_datetime_picker

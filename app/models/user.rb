@@ -8,8 +8,8 @@ before_create :create_remember_token
   belongs_to :operation
   has_many :answers
   # validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: true
-  validates :reservation_id, presence: true
-  validates :birthday, presence:true
+  # validates :reservation_id, presence: true
+  # validates :birthday, presence:true
 
   # validate :add_error_sample
 

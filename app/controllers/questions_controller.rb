@@ -15,7 +15,6 @@ class QuestionsController < ApplicationController
 
   # GET /questions/1
   # GET /questions/1.json<!-- ・現在授乳中ですか？　　　　　　　　　　　　　　　　　　　　　　□はい　□いいえ -->
-
   def show
     @questions = Question.where(operation_id: nil)
   end

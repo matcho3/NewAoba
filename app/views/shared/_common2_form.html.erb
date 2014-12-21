@@ -1,6 +1,6 @@
 <h3>再診</h3>
 <h2>共通質問項目</h2>
-<div>◆以下の質問にご回答をお願いします◆</div>
+<hr>
 
 <!-- 再診　共通項目 -->
 
@@ -10,4 +10,7 @@
 
 <%= render partial: 'questions/question_form', locals: {id: 53, text: "◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆"} %>
 
-<%= link_to '次へ', operations_path,  id: "btn" %>
+<%= link_to '戻る', root_url,  id: "btn", class: "btn3" %>
+<%= link_to '次へ', operations_path,  id: "btn", class: "btn2" %>
+<br>
+<hr>

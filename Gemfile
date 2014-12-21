@@ -36,6 +36,7 @@ gem 'better_errors'
 gem 'binding_of_caller'
 gem "jquery-ui-rails"
 gem "just-datetime-picker"
+gem 'rails_config'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false

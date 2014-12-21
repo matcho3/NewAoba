@@ -1,5 +1,6 @@
 $(function() {
 	$('#btn').click(function(event) {
+
 		console.log(1);
 	 	// 全てのフォームを持って来る
 	 	var form = $('form');

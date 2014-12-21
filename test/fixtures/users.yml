@@ -17,8 +17,11 @@
 
 user_1:
   id: 1
+  first_name: 加藤
+  last_name: 將倫
   reservation_id: 1
   birthday: 2014-12-19
+  reserved_at: 2014-12-19
   operation_id: 1
   email: sample1@icloud.com
   first_time: 0

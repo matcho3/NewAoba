@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   # GET /users/1.jso
 
   def show
+    
   end
 
   # GET /users/new

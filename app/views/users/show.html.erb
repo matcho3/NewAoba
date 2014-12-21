@@ -1,53 +1,56 @@
-<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></div>
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+<div class="user-information-wrapper">
+  <div class="user-item">診断状況</div>
+  <div class="user-information">
+    <% if current_user.first_time == 0 %>
+    <%= '初診' %>
+    <% else %>
+    <%= '再診' %>
+    <% end %>
+  </div>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+  <div class="user-information">
+    <div class="user-item">予約番号</div>
+    <div><%= @user.reservation_id %></div>
+  </div>
 
-<p>
-  <strong>Birthday:</strong>
-  <%= @user.birthday %>
-</p>
+  <div class="user-information">
+    <div class="user-item">お名前</div>
+    <div><%= @user.first_name %> <%= @user.last_name %> 様</div>
+  </div>
 
-<p>
-  <strong>Reserved at:</strong>
-  <%= @user.reserved_at %>
-</p>
+  <div class="user-information">
+    <div class="user-item">生年月日</div>
+    <%#= @user. %>
+  <div><%= @user.birthday.strftime('%Y年%m月%d日') %></div>
+  </div>
 
-<p>
-  <strong>Operation:</strong>
-  <%= @user.operation_id %>
-</p>
+  <div class="user-information">
+    <div class="user-item">予約日時</div>
+    <div><%= @user.reserved_at.strftime('%Y年%m月%d日') %></div>
+  </div>
 
-<p>
-  <strong>Body part:</strong>
-  <%= @user.body_part %>
-</p>
+  <div class="user-information">
+    <div class="user-item">施術内容</div>
+    <div><%= @user.operation.name %></div>
+  </div>
 
-<p>
-  <strong>First time:</strong>
-  <%= @user.first_time %>
-</p>
+  <div class="user-information">
+    <div class="user-item">部位</div>
+    <div><%= @user.body_part %></div>
+  </div>
 
-<p>
-  <strong>Reservation:</strong>
-  <%= @user.reservation_id %>
-</p>
+</div>
 
-<p>
-  <strong>Url:</strong>
-  <%= @user.URL %>
-</p>
+<!-- <div class="user-information">
+  <div>Url:</div>
+  <%#= @user.URL %>
+</div> -->
 
 <h2>この内容に、お間違いありませんか？</h2>
-<%= link_to 'OK', questions_path %> |
-<%= link_to 'NO', root_path, data: { confirm: 'お手数ですが、クリニックまで再度ご連絡をお願いします。' } %>
+<%= link_to 'はい', questions_path %>
+<%= link_to 'いいえ', root_path, data: { confirm: 'お手数ですが、クリニックまで再度ご連絡をお願いします。' } %>
 
 
 

@@ -1,2 +1,51 @@
-<h1>Sessions#create</h1>
-<p>Find me in app/views/sessions/create.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @user.birthday %>
+</p>
+
+<p>
+  <strong>Reserved at:</strong>
+  <%= @user.reserved_at %>
+</p>
+
+<p>
+  <strong>Operation:</strong>
+  <%= @user.operation_id %>
+</p>
+
+<p>
+  <strong>Reservation:</strong>
+  <%= @user.reservation_id %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @user.URL %>
+</p>
+
+<h2>この内容に、お間違いありませんか？</h2>
+<%= link_to 'OK', questions_path %> |
+<%= link_to 'NO', root_path, data: { confirm: 'お手数ですが、クリニックまで再度ご連絡をお願いします。' } %>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+// Place all the styles related to the top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#promo
+{
+  position: relative;
+}
+
+#promo .more
+{
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.promo
+{
+  background-image: image-url("camp.png");
+  background-size: cover;
+}
+
+video
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.faq .item
+{
+  clear: both;
+}
+
+.team .camp-img img
+{
+  width: 70%;
+  border: 3px solid #9AEAC9;
+}
+
+.logo-image
+{
+  padding: 5px;
+}
+
+#contact .form-group
+{
+  margin-bottom: 20px;
+}
+
+#contact .contact-label
+{
+  font-weight: 100;
+  text-align: left;
+  display: block;
+}
+
+.birthday .form-control
+{
+  width: 15%;
+  min-width: 65px;
+  display: inline-block;
+}
+
+.gender .form-control
+{
+  width: inherit;
+  display: inline-block;
+  margin: 0 5px 0 20px;
+}

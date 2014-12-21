@@ -1,0 +1,546 @@
+@charset 'UTF-8';
+
+html {
+	overflow-y:scroll;
+}
+*{margin:0;padding:0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;padding:0;
+}
+table{
+    border-collapse:collapse;border-spacing:0;
+}
+fieldset,img{ border:0; }
+address,caption,cite,code,dfn,em,strong,th,var{
+    font-style:normal;font-weight:normal;
+}
+li { list-style:none; } caption,th{ text-align:left; }
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+}
+q:before,q:after{ content:''; }
+abbr,acronym{ border:0;font-variant:normal; }
+sup{ vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+input,textarea,select{ font-family:inherit;font-size:inherit;font-weight:inherit; }
+input,textarea,select{ *font-size:100%; }
+legend{ color:#000; }
+
+body{
+	margin:0;
+	padding:0;
+	background:#00B4FF;
+	text-align:center;
+	color:#656565;
+	font-size:12px;
+}
+
+a {color:#00B4FF;text-decoration:underline;}
+a:hover {color:#8BD2F4;text-decoration:none;}
+
+img {border:none;}
+ul {list-style:none;}
+
+#container{
+	background:url(http://monshin.jp/img/base/titleBg.gif) center top;
+}
+#wrapper{
+	background:url(http://monshin.jp/img/base/headBoder.gif) repeat-x left top;
+}
+#wrap{
+	
+}
+
+#body{
+	margin:0;
+	padding:0;
+	clear:both;
+	background:url(http://monshin.jp/img/base/bg.gif);
+}
+
+
+
+.fontChange {
+	clear:both;
+}
+	.fontChange div {
+		width:186px;
+		height:25px;
+		float:right;
+		margin:6px 0 0;
+		overflow:hidden;
+		background:url(http://monshin.jp/img/base/fontSize.gif) no-repeat left top;
+	}
+		.fontChange dl {
+			width:200px;
+		}
+			.fontChange dl dt {
+				width:102px;
+				height:20px;
+				float:left;
+			}
+			.fontChange dl dd {
+				float:left;
+				padding:4px 0 0;
+			}
+.changeArea{
+	line-height: 1.5;
+}
+#fontSize {
+	*zoom: 1; /*forIE6,7*/
+	margin-bottom: 10px;
+}
+#fontSize:after {
+	content: "";
+	display: block;
+	clear: both; 
+}
+#fontSize li {
+	background-color: #8BD2F4;
+	padding:2px 5px;
+	margin-right: 5px;
+	float: left;
+	cursor: pointer;
+	color:#fff;
+}
+#fontSize li:hover {
+	background-color: #00B4FF;
+}
+#fontSize li.active {
+	background-color: #00B4FF;
+}
+#fontSize li.active:hover {
+	background-color: #00B4FF;
+}
+
+
+
+#head{
+	width:980px;
+	height:72px;
+	overflow:hidden;
+	margin:0 auto;
+}
+	#head #logo{
+		width:300px;
+		float:left;
+	}
+		#head #logo a{
+			width:300px;
+			height:50px;
+			display:block;
+			margin:14px 0 0 24px;
+			background:url(http://monshin.jp/img/base/logo.gif) no-repeat left top;
+		}
+			#head #logo a span{display:none;}
+			
+	#head .leftColumn{
+		width:675px;
+		float:right;
+	}
+		#head .leftColumn .subMenu{
+			height:20px;
+			margin:14px 10px 0 0;
+			text-align:right;
+		}
+			#head .leftColumn .subMenu p{
+				display:inline;
+				background:url(http://monshin.jp/img/base/iconArrow_2.gif) no-repeat left center;
+			}
+				#head .leftColumn .subMenu p a{
+					padding:2px 10px 2px 17px;
+					background-image:url(http://monshin.jp/img/base/iconArrow_1.gif);
+					background-repeat:no-repeat;
+					background-position:left center;
+					color:#808080;
+				}
+				#head .leftColumn .subMenu p a:hover{
+					background-image:none;
+				}
+
+
+#topMainSpace {
+	height:286px;
+	overflow:hidden;
+	background:url(http://monshin.jp/img/top/mainImage.jpg) no-repeat center top;
+}
+	#topMainSpace .body {
+		width:920px;
+		margin:0 auto;
+		padding:30px 0 0;
+		text-align:left;
+	}
+		#topMainSpace .body .catch {
+			width:510px;
+			height:89px;
+			margin:0 0 10px;
+			background:url(http://monshin.jp/img/top/catch.png) no-repeat left top;
+		}
+		#topMainSpace .body .text {
+			width:500px;
+			padding:0 0 20px;
+			color:#727171;
+		}
+		#topMainSpace .body .menuButton {
+			clear:both;
+		}
+			#topMainSpace .body .menuButton ul {
+				padding:10px 0 0;
+			}
+				#topMainSpace .body .menuButton ul li {
+					width:262px;
+					float:left;
+				}
+					#topMainSpace .body .menuButton ul li a {
+						width:244px;
+						height:40px;
+						display:block;
+					}
+					#topMainSpace .body .menuButton ul li a:hover {
+						filter: alpha(opacity=75);
+						opacity: 0.75;
+					}
+					#topMainSpace .body .menuButton ul li div {
+						width:244px;
+						height:40px;
+						display:block;
+						cursor:pointer; 
+					}
+					#topMainSpace .body .menuButton ul li div:hover {
+						filter: alpha(opacity=75);
+						opacity: 0.75;
+					}
+					#topMainSpace .body .menuButton ul li.sheet div {background:url(http://monshin.jp/img/top/buttonSheet.png) no-repeat left top;}
+					#topMainSpace .body .menuButton ul li.simulation div {background:url(http://monshin.jp/img/top/buttonSimulation.png) no-repeat left top;}
+
+		#topMainSpace .body em {
+			display:none;
+		}
+
+
+.body .checkListTitle {
+	height:42px;
+	clear:both;
+	margin:40px 0 20px;
+	padding:0 0 5px;
+	background:url(http://monshin.jp/img/top/border_1.gif) repeat-x left bottom;
+}
+	.body .checkListTitle h2 {
+		margin:0;
+		padding:0 10px 0 0;
+		float:left;
+		font-size:28px;
+		font-weight:bolder;
+		font-family:"メイリオ",Meiryo,verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gthic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+		color:#00B4FF;
+		line-height:50px;
+	}
+	.body .checkListTitle p {
+		float:left;
+		color:#B5B5B6;
+		line-height:50px;
+		font-size:12px;
+	}
+	.body .checkListTitle em {
+		float:left;
+		color:#7F7F7F;
+		line-height:50px;
+		font-size:12px;
+	}
+
+.categoryTitle {
+	margin:0;
+}
+#exercise .categoryTitle {
+	background:url(http://monshin.jp/img/top/titleExercise.gif) no-repeat left bottom;
+}
+#meal .categoryTitle {
+	background:url(http://monshin.jp/img/top/titleMeal.gif) no-repeat left bottom;
+}
+#stress .categoryTitle {
+	background:url(http://monshin.jp/img/top/titleStress.gif) no-repeat left bottom;
+}
+.simulation .categoryTitle {
+	background:url(http://monshin.jp/img/top/titleSimulation.gif) no-repeat left bottom;
+}
+	.categoryTitle span {
+		display:block;
+		padding:10px 5px 10px 50px;
+		color:#404040;
+	}
+
+.body {
+	width:920px;
+	clear:both;
+	margin:0 auto;
+	padding:10px 0;
+	text-align:left;
+}
+	.body .checkCategoryListWrapLeft {
+		width:450px;
+		float:left;
+	}
+	.body .checkCategoryListWrapRight {
+		width:450px;
+		float:right;
+	}
+	.body .checkCategoryListWrapMiddle {
+		float:left;
+	}
+	.checkCategoryListAbout h3 {
+		width:280px;
+		height:23px;
+		margin:14px 0 8px 110px;
+		background:url(http://monshin.jp/img/contents/base/text1.png) no-repeat left top;
+	}
+		.checkCategoryListAbout h3 span {
+			display:block;
+			padding:2px 0 0 20px;
+			font-weight:bolder;
+			font-size:16px;
+			color:#59575E;
+			font-family:"メイリオ",Meiryo,verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gthic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+		}
+	.checkCategoryListAbout img {
+		display:block;
+		margin:0 0 10px 108px;
+	}
+	
+	.checkCategoryListAbout .push {
+		background:url(http://monshin.jp/img/top/pushBg.png) no-repeat left bottom;
+	}
+	.checkCategoryListAbout .check {
+		padding:0 0 7px;
+		background:url(http://monshin.jp/img/top/checkBg.png) no-repeat left bottom;
+	}
+	.checkCategoryListAbout .mental {
+		background:url(http://monshin.jp/img/top/mentalBg.png) no-repeat left bottom;
+	}
+	.checkCategoryListAbout .theBody {
+		background:url(http://monshin.jp/img/top/theBodyBg.png) no-repeat left bottom;
+	}
+	.checkCategoryListAbout .diet {
+		background:url(http://monshin.jp/img/top/dietBg.png) no-repeat left bottom;
+	}
+	.checkCategoryListAbout .beauty {
+		background:url(http://monshin.jp/img/top/beautyBg.png) no-repeat left bottom;
+	}
+	
+	.checkCategoryListAbout div div.changeArea {
+		margin:0 0 0 110px;
+		padding:0 0 20px;
+		color:#999;
+	}
+	
+	.body .checkCategoryList {
+		margin:15px 0 35px;
+		padding:4px 0 0;
+		clear:both;
+		background:url(http://monshin.jp/img/top/listT.gif) no-repeat left top;
+	}
+		.body .checkCategoryList .container {
+			padding:0 0 3px;
+			background:url(http://monshin.jp/img/top/listB.gif) no-repeat left bottom;
+		}
+			.body .checkCategoryList .container .wrapper {
+				clear:both;
+				background:url(http://monshin.jp/img/top/listM.gif) repeat-y left top;
+			}
+	
+	.body .oneColumnList .checkCategoryList {
+		background:url(http://monshin.jp/img/top/listT2.gif) no-repeat left top;
+	}
+		.body .oneColumnList .checkCategoryList .container {
+			background:url(http://monshin.jp/img/top/listB2.gif) no-repeat left bottom;
+		}
+			.body .oneColumnList .checkCategoryList .container .wrapper {
+				background:url(http://monshin.jp/img/top/listM2.gif) repeat-y left top;
+			}
+
+				.body .checkCategoryList .container .wrapper .checkCategoryListUl {
+					padding:0 0 5px;
+				}
+					.body .checkCategoryList .container .wrapper .checkCategoryListUl .checkCategoryListLeft {
+						width:450px;
+						float:left;
+					}
+					.body .checkCategoryList .container .wrapper .checkCategoryListUl .checkCategoryListRight {
+						width:450px;
+						float:right;
+					}
+			.body .checkCategoryList .list{
+				clear:both;
+				margin:0 8px;
+				overflow:hidden;
+			}
+				.body .checkCategoryList .list ul{
+					margin:0 0 -5px;
+				}
+					.body .checkCategoryList .list ul li{
+						padding:8px 0;
+						background:url(http://monshin.jp/img/base/border_bottom_1.gif) repeat-x left bottom;
+						color:#656565;
+					}
+					
+					.body .oneColumnList .checkCategoryList .list ul li{
+						width:48%;
+						float:left;
+						margin:0 10px 0 0;
+					}
+						
+						.body .checkCategoryList .list ul li div {
+							background:url(http://monshin.jp/img/base/iconArrow_4.gif) no-repeat left center;
+						}
+							.body .checkCategoryList .list ul li div a {
+								padding:0 0 0 30px;
+								background-image:url(http://monshin.jp/img/base/iconArrow_3.gif);
+								background-repeat:no-repeat;
+								background-position:left center;
+								text-decoration:none;
+								color:#656565;
+							}
+							.body .checkCategoryList .list ul li div a:hover {
+								background-image:none;
+								text-decoration:none;
+								color:#00B4FF;
+							}
+	
+
+.checkCategoryList .navi {
+	clear:both;
+	padding:12px 4px 7px;
+}
+	.checkCategoryList .simulation .navi a {
+		width:141px;
+		height:31px;
+		display:block;
+		float:right;
+		background:url(http://monshin.jp/img/top/buttonMore.gif) no-repeat left top;
+	}
+	.checkCategoryList .simulation .navi a:hover {
+		filter: alpha(opacity=75);
+		opacity: 0.75;
+	}
+
+
+	.Tab {
+		width:294px;
+		float:right;
+		overflow:hidden;
+		margin:0 0 -2px;
+	}
+			ul#tab li {
+				width:95px;
+				text-align:center;
+				float:left;
+				
+			}
+				ul#tab li a {
+					height:28px;
+					display:block;
+					padding:0 0 0 15px;
+					background-repeat:no-repeat;
+					background-position:left top;
+					color:#7F7F7F;
+					text-decoration:none;
+					line-height:30px;
+				}
+
+				a.tab1 {
+					background-image:url(http://monshin.jp/img/top/tab1.png);
+				}
+				a.tab2 {
+					background-image:url(http://monshin.jp/img/top/tab2.png);
+				}
+				a.tab3 {
+					background-image:url(http://monshin.jp/img/top/tab3.png);
+				}
+				ul#tab li.selected a {
+					background-position:left bottom;
+					color:#00B4FF;
+					text-decoration:none;
+				}
+				ul#tab li a:hover {
+					background-position:left bottom;
+					color:#00B4FF;
+					text-decoration:none;
+				}
+
+
+
+.bannerSpace {
+	width:920px;
+	overflow:hidden;
+	clear:both;
+}
+	.bannerSpace ul {
+		width:980px;
+	}
+		.bannerSpace ul li {
+			width:313px;
+			float:left;
+		}
+			.bannerSpace ul li a:hover {
+				filter: alpha(opacity=75);
+				opacity: 0.75;
+			}
+
+#footMenu{
+	width:980px;
+	clear:both;
+	margin:0 auto;
+	padding:35px 0 0;
+	text-align:left;
+}
+	#footMenu .subMenu{
+		float:left;
+	}
+		#footMenu .subMenu p{
+			display:inline;
+			background:url(http://monshin.jp/img/base/iconArrow_2.gif) no-repeat left center;
+		}
+			#footMenu .subMenu p a{
+				padding:2px 10px 2px 17px;
+				background-image:url(http://monshin.jp/img/base/iconArrow_1.gif);
+				background-repeat:no-repeat;
+				background-position:left center;
+				color:#808080;
+			}
+			#footMenu .subMenu p a:hover{
+				background-image:none;
+			}
+		#footMenu .pageTop{
+			width:154px;
+			float:right;
+			margin:0 0 -3px;
+		}
+			#footMenu .pageTop a{
+				width:127px;
+				height:35px;
+				display:block;
+				background:url(http://monshin.jp/img/base/pageTop.png) no-repeat left bottom;
+			}
+.copyRight{
+	width:980px;
+	margin:0 auto;
+	text-align:right;
+}
+	.copyRight span{
+		display:block;
+		padding:10px;
+		color:#fff;
+	}
+
+.cf:after{
+	content:".";
+	display:block;
+	visibility:hidden;
+	height:0.1px;
+	font-size:0.1em;
+	line-height:0;
+	clear: both;
+}
+.hide {
+	display:none;
+}

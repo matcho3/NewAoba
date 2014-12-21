@@ -11,12 +11,19 @@ Rails.application.routes.draw do
   get "user/create"
   get "user/update"
   get "user/destroy"
-  root  'about#index'
-  get "sessions/create"
-  match '/signin',to:'sessions#new',via:'get'
+  
+  # root  'about#index'
+  # get "sessions/create"
+  
+
+  root 'sessions#new'
+  # root 'about#index'
   match '/signout',to:'sessions#destroy',via:'delete'
+  # match '/sendmail',to:'items#mail_send',via:'get'
    # match '/confirm/:id',to:'users#confirm', as:'user_confirm', via:'get'
-   match '/driver/:id',to:'drivers#new',as:'resister_driver', via:'get'
+  # match '/answer',to:'answers#answer',via:'get'
+  match '/sendmail/:id',to:'items#mail_send',as:'sendmail',via:'get'
+# post '/answers/save',   to: 'answers#save',  as: :answer_save
 
   resources :answers
   resources :questions

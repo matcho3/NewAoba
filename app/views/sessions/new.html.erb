@@ -1,20 +1,134 @@
-<h1>WEB問診フォーム</h1>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(:session, url: sessions_path) do |f| %>
-	  <div class="field">
-      <%= f.label :reservation_id %><br>
-      <%= f.text_field :reservation_id %>
-      </div>
-      <div class="field">
-      <%= f.label :birthday %><br>
-      <%= f.date_field :birthday %>
-      </div>
-	  <%= f.submit "OK",  class: "btn btn-large btn-primary" %>
-    <% end %>
+      <!-- Main content starts -->
+     <!--  <div class="main-block"> -->
+    
+        <!-- Page heading two starts -->
+        
+        <div class="page-heading-two">
+          <div class="container">
+            <h2 style="float:none; text-align:center">問診入力フォーム <span><!-- 以下のアンケートにお答えください --></span></h2>
+          </div>
+        </div>
 
-    <p>New user? <%= link_to "Sign up now!", '#' %></p>
-  </div>
-</div>
+<!-- <div class="container">
+ -->          <div class="medical">
+            <div class="medic-appoint">
+              <div class="row">
+                <div class="col-md-8 col-sm-8 col-md-offset-2">
+                  
+                  <div class="block-heading-two">
+                    <h3><span>予約情報入力</span>
+                  </div>
+                  <%= flash[:alert] %></h3>
+                  <!-- Appointment content -->
+                  <%= form_for(:session, url: sessions_path) do |f| %>
+                  
+                  <form role="form">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                          <div class="form-group">
+                          <%#= form_for(@foo, :url => {:controller => :bars, :action => :update}) do |f| %>
+                          <%= f.label "予約番号" %><br>
+                          <%= f.text_field :reservation_id %>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <!-- <div class="form-group"> -->
+                           <div class="form-group birthday">
+                            <!-- <div>生年月日</div> -->
+                            <%#= f.label  class: "contact-label" %>
+                            <%= f.label "生年月日" %><br>
+                            <%= raw sprintf(
+                                f.date_select(
+                                :birthday,
+                                {use_month_numbers: true,
+                                start_year:        1920,
+                                end_year:          2014,
+                                default:           Date.new(1992, 1, 1),
+                                date_separator:    '%s'},
+                                class: "form-control"),
+                                '年 ', '月 ') + '日' %>
+                            </div><!--//form-group-->
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-12 col-sm-12">
+                        <%= f.submit "OK",  class: "btn btn-color" %><% end %>
+                        <!-- <button type="reset" class="btn btn-default">Reset</button> -->
+                      </div>
+                    </div>
+                  </form>
+                </div>
 
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="col-md-8 col-sm-8 col-md-offset-2" style="padding-top: 100px; padding-bottom: 100px">
+                  <div class="block-heading-two">
+                    <h3><span>予約番号を忘れてしまった方はこちら</span></h3>
+                  </div>
+
+                  <!-- Appointment content -->
+                  <%= form_for(:session, url: sessions_path) do |f| %>
+                  <%#= render 'shared/error_messages', object: f.object %>
+                  <form role="form">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                          <%= f.label "姓" %><br>
+                          <%= f.text_field :first_name,  placeholder: "姓(カタカナ)" %>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                          <%= f.label "名" %><br>
+                          <%= f.text_field :last_name,  placeholder: "名(カタカナ)" %>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group birthday">
+                          <%= f.label "生年月日" %><br>
+                            <%= raw sprintf(
+                                f.date_select(
+                                :birthday,
+                                {use_month_numbers: true,
+                                start_year:        1920,
+                                end_year:          2014,
+                                default:           Date.new(1992, 1, 1),
+                                date_separator:    '%s'},
+                                class: "form-control"),
+                                '年 ', '月 ') + '日' %>
+                            </div><!--//form-group-->
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-12 col-sm-12">
+                       <%= f.submit "OK",  class: "btn btn-color" %><% end %>
+                      </div>
+                    </div>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+        </div>
+    <!-- contents終了 -->
+      <!-- </div> -->
+      
+      <!-- Main content ends -->
+
+   <!--  </div> -->
+    
+    <!-- Outer Ends -->   
+    
+   

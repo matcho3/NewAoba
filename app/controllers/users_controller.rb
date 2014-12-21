@@ -8,7 +8,8 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1
-  # GET /users/1.json
+  # GET /users/1.jso
+
   def show
   end
 
@@ -20,9 +21,30 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def confirm
-    @user = User.find(params[:id])
-  end
+  
+  # create_table "answers", force: true do |t|
+  #   t.text     "content"
+  #   t.integer  "user_id"
+  #   t.integer  "question_id"
+  #   t.datetime "created_at"
+  #   t.datetime "updated_at"
+  # end
+
+
+  # def book
+  #     # @trip = Trip.find(params[:id])
+  #     # @book = Book.new
+  #     # @book.user_id = current_user.id 
+  #     # @book.trip_id = @trip.id
+  #     # @book.save
+
+  #     @book = current_user.books.create(trip_id: @trip.id)
+  #     @book.save
+  #       flash[:success] = "Your book request has been confirmed!!"
+  #   end
+
+
+
 
   # POST /users
   # POST /users.json

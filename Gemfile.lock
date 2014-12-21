@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 6f7def4de94c1e8b8a3de8d08cbb41fe8b9a96d6
+  revision: c6c435b82ed82e645fae60bd4fa95d3d0d47e4f9
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0, >= 1.0.2)
@@ -100,9 +100,12 @@ GEM
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    jquery-ui-rails (5.0.2)
+    jquery-ui-rails (5.0.3)
       railties (>= 3.2.16)
     json (1.8.1)
+    just-datetime-picker (0.0.6)
+      activeadmin (>= 0.4.4)
+      formtastic (>= 2.0.0)
     kaminari (0.16.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -138,7 +141,7 @@ GEM
       activesupport (= 4.0.5)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.4.0)
+    rake (10.4.2)
     ransack (1.5.1)
       actionpack (>= 3.0)
       activerecord (>= 3.0)
@@ -199,6 +202,8 @@ DEPENDENCIES
   faker (= 1.1.2)
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
+  jquery-ui-rails
+  just-datetime-picker
   pg (= 0.15.1)
   rails (= 4.0.5)
   rails_12factor (= 0.0.2)

@@ -1,25 +1,138 @@
-<h1>共通項目</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Operation</th>
-      <th>Content</th>
-    </tr>
-  </thead>
+<% if current_user.first_time == 0 %>
+<%= render 'shared/common_form' %>
+<% end %>
 
-  <tbody>
-    <% @questions.each do |question| %>
-      <tr>
-        <td><%= question.content %></td>
-        <td><%= link_to 'Show', question %></td>
-        <td><%= link_to 'Edit', edit_question_path(question) %></td>
-        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
+<% if current_user.first_time == 1 %>
+<%= render 'shared/common2_form' %>
+<% end %>
 
-<%= link_to 'New Question', new_question_path %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- build 
+一個ずつフォーム書く
+対応するquestion を引っ張って来る。
+ココからanswer をbuild する。
+新しく作る。
+@question.content = Question.find_by(id: 1)
+@question.build_answer
+ -->
+<%#= form_for(@question) do |f| %>
+
+<!-- type によってif 文で分ける。 -->
+
+
+<!-- if(type  == kao)
+render 'face_form' -->
+
+
+
+
+<!-- <div>◆以下の質問にご回答をお願いします◆</div>  
+
+1ヶ月以内にエステや病院で美容治療を受けましたか？
+
+<#%= form_for(Question.find(1).answers.build) %>
+  <%#= select_tag %>はい
+  <%#= select_tag %>いいえ
+# <#% end %> -->
+
+
+
+<!-- content と一緒に送る。
+user_id = current_user
+
+
+共通パーシャル　
+
+顔パーシャル　
+
+質問に複数答える項目がある場合
+はい　か　いいえ　が入る。content radio button のvalue を'はい'、いいえ。
+ -->
+
+
+
+
+
+
+

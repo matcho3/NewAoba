@@ -2,4 +2,141 @@
 
 operation_1:
   id: 1
-  name: 顔の手術
+  name: エクリシス
+
+operation_2:
+  id: 2
+  name: ウルトラアクセント
+
+operation_3:
+  id: 3
+  name: テノール
+
+operation_4:
+  id: 4
+  name: ゼルティック
+
+operation_5:
+  id: 5
+  name: エレクトロポレーション
+
+operation_6:
+  id: 6
+  name: 脱毛
+
+operation_7:
+  id: 7 
+  name: レーザートーニング
+
+operation_8:
+  id: 8
+  name: フラクショナルレーザー
+
+operation_9:
+  id: 9
+  name: サーマクール
+
+operation_10:
+  id: 10
+  name: ルビーレーザー　CO2レーザー
+
+operation_11:
+  id: 11
+  name: ヒアルロン酸注射
+
+operation_12:
+  id: 12
+  name: ボトックス注射
+
+# 再診患者用**************************
+
+operation_13:
+  id: 13
+  name: 脱毛
+
+operation_14:
+  id: 14
+  name: レーザートーニング
+
+operation_15:
+  id: 15
+  name: フラクショナルレーザー
+
+operation_16:
+  id: 16
+  name: サーマクール
+
+operation_17:
+  id: 17
+  name: ルビーレーザー　CO2レーザー
+
+operation_18:
+  id: 18
+  name: ヒアルロン酸注射
+
+operation_19:
+  id: 19
+  name: ボトックス注射
+
+# operation_20:
+#   id: 20
+#   name:
+
+# operation_21:
+#   id: 21
+#   name:
+
+# operation_22:
+#   id: 22
+#   name:
+
+# operation_23:
+#   id: 23
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+# operation_:
+#   id: 
+#   name:
+
+
+

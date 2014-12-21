@@ -1,27 +1,11 @@
-<h1>Listing operations</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<% if current_user.first_time == 0 %>
+<%= render 'shared/specific_form' %>
+<% end %>
 
-  <tbody>
-    <% @operations.each do |operation| %>
-      <tr>
-        <td><%= operation.name %></td>
-        <td><%= link_to 'Show', operation %></td>
-        <td><%= link_to 'Edit', edit_operation_path(operation) %></td>
-        <td><%= link_to 'Destroy', operation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
+<% if current_user.first_time == 1 %>
+<%= render 'shared/specific2_form' %>
+<% end %>
 
-<%= link_to 'New Operation', new_operation_path %>
+<%= link_to "確認画面へ。", answer_path(@oquestions), id: "btn " %>

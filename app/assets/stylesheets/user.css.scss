@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.register-area
+{
+  background-color: white;
+  padding: 0 10px 30px 10px;
+  border-radius: 5px;
+  border: 1px solid #C0D9E2;
+  margin-bottom: 80px;
+}
+
 .user-information-wrapper
 {
   width: 50%;
@@ -10,7 +19,7 @@
   background-color: white;
   padding: 30px 20px;
   border-radius: 3px;
-  border: 1px solid #FFC0C0;
+  border: 1px solid #C0D9E2;
 }
 
 .user-information-wrapper h2
@@ -33,11 +42,11 @@
 .wrapper
 {
   width: 50%;
-  margin: 0 auto 20px;
+  margin: 20px auto 20px;
   background: white;
   padding: 15px;
   border-radius: 5px;
-  border: 1px solid #FFCBCB;
+  border: 1px solid #C0D9E2;
 }
 
 .question-td
@@ -73,4 +82,17 @@
 .btn a
 {
   color: white;
+}
+
+form input[type=text]
+{
+  width: calc(80% - 22px);
+  border: 1px solid #c9d0d6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 0.95em;
+  font-family: Helvetica, Arial, sans-serif;
+  outline: none;
+  padding: 8px 10px 7px;
 }

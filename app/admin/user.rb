@@ -12,15 +12,28 @@ ActiveAdmin.register User do
         f.input :email, :label => "Eメール"
         f.input :first_name, :label => "姓"
         f.input :last_name, :label => "名"
-        f.input :birthday, :label => "誕生日", :start_year => Date.today.year - 100, :end_year => Date.today.year
+        f.input :birthday, :label => "誕生日", :start_year => Date.today.year - 34 , :end_year => Date.today.year
 
-        f.input :reserved_at, :label => "予約日", :time_hour => Time.now
-        f.input :body_part, :label => "部位", :as => :select, :collection => body
-        f.input :first_time, :label => "初診or再診", :as => :select, :collection => time
+        f.input :reserved_at, :label => "予約日", :value => Time.now
+        f.input :body_part, :label => "部位", :as => :select, :collection => body, :collection => [["顔", '0'], ["首元", '1'], ["体", '2']]
+        f.input :first_time, :label => "初診or再診", :as => :select, :collection => time, :collection => [["初診", '0'], ["再診", '1']]
         # f.submit "Submit"
     end
+    f.actions
   end
+
+
+
+permit_params :operation_id, :email, :first_name, :last_name, :birthday, :reserved_at, :body_part, :first_time
+
+
+
+
+
 end
+
+
+
 
 
 

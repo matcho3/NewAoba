@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Aoba</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>Aoba</title>
+    <!-- Description, Keywords and Author -->
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your,Keywords">
+    <meta name="author" content="ResponsiveWebInc">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Styles -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Font awesome CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <!-- Universal Mega menu -->
+    
+    <!-- Magnific Popup -->
+    
+    <!-- Owl carousel -->
 
-<%= yield %>
+    
+    <link rel="shortcut icon" href="#">
+  </head>
+  
+  <body>
+<!-- header  starts-->
+
+
+<%= render 'layouts/header' %>
+ <div class="main-block">
+    <div class="container">
+<!-- //header end -->
+    <%= yield %>
+    </div>
+ </div>
+<%= render 'layouts/footer' %>
+
+<!-- Scroll to top -->
+    
+    <!-- Javascript files -->
 
 </body>
 </html>

@@ -1,55 +1,19 @@
 <h2>再診<h2>
 <h2>ボトックス注射</h2>
 
-<p>1ヶ月以内にボトックス注射を受けましたか？</p>
-<%= form_for(Question.find(79).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>現在妊娠の可能性はありますか？</p>
-<%= form_for(Question.find(80).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>現在授乳中ですか？</p>
-<%= form_for(Question.find(81).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>現在治療中の病気はありますか？</p>
-<%= form_for(Question.find(82).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>現在外用薬、内服薬等をご使用中ですか？</p>
-<%= form_for(Question.find(83).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
-<p>◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆</p>
-<%= form_for(Question.find(84).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
+<!-- ボトックス注射 -->
 
+<%= render partial: 'questions/question_form', locals: {id: 79, text: "1ヶ月以内にボトックス注射を受けましたか？"} %>
+
+<%= render partial: 'questions/question_form', locals: {id: 80, text: "現在妊娠の可能性はありますか？"} %>
+
+<%= render partial: 'questions/question_form', locals: {id: 81, text: "現在授乳中ですか？"} %>
+
+<%= render partial: 'questions/question_form', locals: {id: 82, text: "現在治療中の病気はありますか？"} %>
+
+<%= render partial: 'questions/question_form', locals: {id: 83, text: "現在外用薬、内服薬等をご使用中ですか？"} %>
+
+<%= render partial: 'questions/question_form', locals: {id: 84, text: "◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆"} %>
 
 
 <%#= link_to '次へ', answer_path %>

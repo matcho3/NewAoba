@@ -1,21 +1,8 @@
 <!-- ウルトラアクセント -->
-<p>ウルトラアクセントのご経験はありますか？</p>
-<%= form_for(Question.find(16).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
 
-<p>治療をご希望の部分に皮膚疾患はありますか？</p>
-<%= form_for(Question.find(17).answers.build) do |q| %>
-  <%= q.hidden_field :question_id %>
-  <%= q.radio_button(:content, "yes") %>
-  <%= q.label :content, 'はい', :value => "yes" %>
-  <%= q.radio_button(:content, "no") %>
-  <%= q.label :content, 'いいえ', :value => "no" %>
-<% end %>
+<%= render partial: 'questions/question_form', locals: {id: 16, text: "ウルトラアクセントのご経験はありますか？"} %>
+
+<%= render partial: 'questions/question_form', locals: {id: 17, text: "治療をご希望の部分に皮膚疾患はありますか？"} %>
 
 
 <br>

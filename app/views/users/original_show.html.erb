@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></div>
+
+<div class="user-information-wrapper">
+  <div class="user-item">診断状況</div>
+  <div class="user-information">
+    <% if current_user.first_time == 0 %>
+    <%= '初診' %>
+    <% else %>
+    <%= '再診' %>
+    <% end %>
+  </div>
+
+  <div class="user-information">
+    <div class="user-item">予約番号</div>
+    <div><%= @user.reservation_id %></div>
+  </div>
+
+  <div class="user-information">
+    <div class="user-item">お名前</div>
+    <div><%= @user.first_name %> <%= @user.last_name %> 様</div>
+  </div>
+
+  <div class="user-information">
+    <div class="user-item">生年月日</div>
+    <%#= @user. %>
+  <div><%= @user.birthday.strftime('%Y年%m月%d日') %></div>
+  </div>
+
+  <div class="user-information">
+    <div class="user-item">予約日時</div>
+    <div><%= @user.reserved_at.strftime('%Y年%m月%d日') %></div>
+  </div>
+
+  <div class="user-information">
+    <div class="user-item">施術内容</div>
+    <div><%= @user.operation.name %></div>
+  </div>
+
+  <div class="user-information">
+    <div class="user-item">部位</div>
+    <div><%= Settings.body_part[@user.body_part] %></div>
+  </div>
+
+</div>
+
+<!-- <div class="user-information">
+  <div>Url:</div>
+  <%#= @user.URL %>
+</div> -->
+<div class="user-information-wrapper">
+  <h3>この内容にお間違いありませんか？</h3>
+  <div class="btn5"><%= link_to 'はい', questions_path %></div>
+  <div class="btn2"><%= link_to 'いいえ', root_path, data: { confirm: 'お手数ですが、クリニックまで再度ご連絡をお願いします。' } %></div>
+</div>

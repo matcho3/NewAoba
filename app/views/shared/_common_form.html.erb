@@ -1,7 +1,9 @@
 <h2>共通質問項目</h2>
 <hr>
 <!-- 共通質問フォーム -->
+<%#= form_for(Question.find(id).answers.build) do |q| %>
 
+<%#= render 'shared/error_messages' %>
 
 <%= render partial: 'questions/question_form', locals: {id: 1, text: "1ヶ月以内にエステや病院で美容治療を受けましたか？"} %>
 
@@ -34,11 +36,13 @@
 
 
 
-<!-- <br>
 <br>
-<div id="btn">次へ</div> -->
+<br>
+<!-- <div id="btn">次へ</div> -->
 <%= link_to '戻る', root_url, class: "btn3" %>
+<!-- <div id="btn" class="btn2">次へ</div> -->
 <%= link_to '次へ', operations_path,  id: "btn", class: "btn2" %>
+
 <br>
 <hr>
 <!-- <hr>

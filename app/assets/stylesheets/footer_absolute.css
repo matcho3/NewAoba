@@ -23,7 +23,7 @@ html,body{
 }
 
 #footer{
-    height:140px;
+    /*height:140px;*/
      position:absolute;
      bottom:0;
 }

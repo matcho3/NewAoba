@@ -1,0 +1,18 @@
+
+
+
+<p>この内容でお間違いないですか？</p>
+
+<% @answers.each do |answer| %>
+<p>
+  <strong></strong>
+  <%= answer.question.content %>
+   答え:<%= answer.content %>
+</p>
+<% end %>
+
+
+
+<%= link_to '送信', sendmail_path %>
+
+

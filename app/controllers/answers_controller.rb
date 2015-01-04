@@ -77,6 +77,12 @@ class AnswersController < ApplicationController
     @answer.save
     end
 
+
+
+
+
+
+
 # @search_word = params[:word]
 
 

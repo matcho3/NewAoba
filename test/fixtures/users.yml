@@ -30,8 +30,11 @@ user_1:
 
 user_2:
   id: 2
+  first_name: 小濱
+  last_name: 拓也
   reservation_id: 2
   birthday: 2014-12-19
+  reserved_at: 2014-12-19
   operation_id: 2
   email: sample2@gmail.com
   first_time: 0

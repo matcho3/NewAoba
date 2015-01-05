@@ -5,6 +5,8 @@ $(function() {
 	 	// 全てのフォームを持って来る
 	 	var form = $('form');
 
+		var val = $('form :checked').val();
+        console.log(val); 
 	 	for(var i=0; i<form.length; i++){
 	 		var $form = form.eq(i);
 		console.log($form.serialize());
@@ -27,6 +29,9 @@ $(function() {
 	 });
 });
 
+		jQuery(document).ready(function(){
+             jQuery('#item3t').validationEngine();
+          });
 
 // 最終的に、answer controller 送って保存させる。
 // answer の、answer actionに行くように保存させる

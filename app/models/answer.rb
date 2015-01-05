@@ -2,7 +2,7 @@ class Answer < ActiveRecord::Base
 	belongs_to :user
 	belongs_to :question, :autosave => true
 	# attr_accessible :question_id, :content, :type, :type2
-	# validates :content, :presence => true
+	validates :content, :presence => true
 	# validates :value, :presence => true
 	accepts_nested_attributes_for :question
 end

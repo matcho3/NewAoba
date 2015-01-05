@@ -12,7 +12,7 @@ class AnswersController < ApplicationController
   # GET /answers/1
   # GET /answers/1.json
   def show
-    # @answers = Answer.where(user_id: current_user.id)
+    # @answers = Answer.wheres(user_id: current_user.id)
     # time = Time.now
     @answers = current_user.answers
     # Question.where(operation_id: nil)
@@ -73,11 +73,15 @@ class AnswersController < ApplicationController
     # @answer.content = params[:content]
     # @answer.save
     # 一個保存できれば、何個でも保存できる
+    if !params[:answer][:content]
+      render json: {errors: "未入力の項目があります。"}, status: 422
+
+    end
     @answer = current_user.answers.build(answer_params)
     @answer.save
     end
 
-
+# render json: {errors: "未入力の項目があります。"}, status: 422
 
 
 

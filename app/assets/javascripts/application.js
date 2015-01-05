@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_directory .
+//= require jquery.validationEngine-zh_CN
+//= require jquery.validationEngine

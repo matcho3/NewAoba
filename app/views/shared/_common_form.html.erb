@@ -5,6 +5,8 @@
 
 <%#= render 'shared/error_messages' %>
 
+ <div class="error-message" style="display:none;"></div>
+
 <%= render partial: 'questions/question_form', locals: {id: 1, text: "1ヶ月以内にエステや病院で美容治療を受けましたか？"} %>
 
 <%= render partial: 'questions/question_form', locals: {id: 2, text: "現在妊娠の可能性はありますか？"} %>
@@ -42,7 +44,7 @@
 <!-- <div id="btn">次へ</div> -->
 <%= link_to '戻る', root_url, class: "btn3" %>
 <div id="btn" class="btn2">次へ</div>
-<%#= link_to '次へ', operations_path, class: "btn2" %>
+<%#= link_to '次へ', '#', class: "btn2", id: "btn" %>
 
 <br>
 <hr>

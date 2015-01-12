@@ -1,4 +1,5 @@
 $(function() {
+	// console.log(88);
 	$('#btn').click(function(event) {
 
 		console.log(1);
@@ -6,32 +7,53 @@ $(function() {
 	 	var form = $('form');
 
 		var val = $('form :checked').val();
-        console.log(val); 
+        console.log(val);
+        var isAllFilled = true;  
 	 	for(var i=0; i<form.length; i++){
 	 		var $form = form.eq(i);
-		console.log($form.serialize());
-	 	// var  = $form.serialize();
-	 	$.ajax({
-	 		url: $form.attr('action'),
-	 		type: $form.attr('method'),
-	 		data: $form.serialize(),
-            // timeout: 10000,
-            // dataType: 'text'
-        })
-	 	.success(function( data ) {
-            // 通信が成功したときの処理
-            console.log('success');
-        })
-	 	.error(function( data ) {
-            // 通信が失敗したときの処理
-            console.log('error');
-        })}
+	 		
+	 		console.log($form.find("input[name='radio']:checked")[0]);
+			// console.log($form.serialize());
+
+			// if() {//　もし入っていなかったら
+	 	// 		isAllFilled = false;
+	 	// 		// TODO: バリーションメッセージを表示する
+	 	// 		$('.error-message').html('入力されてないよ');
+	 	// 	}
+		}
+		if(val != null) { // 全部のフォームが入力されていたら
+			console.log(val);
+			for(var i=0; i<form.length; i++) {
+				var $form = form.eq(i);
+				$.ajax({
+			 		url: $form.attr('action'),
+			 		type: $form.attr('method'),
+			 		data: $form.serialize(),
+			 				            // timeout: 10000,
+		            // dataType: 'text'
+		        })
+			 	.success(function( data ) {
+		            // 通信が成功したときの処理
+		            console.log('success');
+		            location.href = '/operations';
+		        })
+			 	.error(function( data ) {
+		            // 通信が失敗したときの処理
+
+		            console.log('error');
+		            // $('.error-message').html('未入力の項目が有ります。');
+		            $('.error-message').show();
+					return;
+					return event.preventDefault();
+		        });
+		    }
+	    } else { // 全部のフォームが入力されていたら
+	    	// $('.error-message').show();
+	    }
 	 });
 });
 
-		jQuery(document).ready(function(){
-             jQuery('#item3t').validationEngine();
-          });
+		
 
 // 最終的に、answer controller 送って保存させる。
 // answer の、answer actionに行くように保存させる

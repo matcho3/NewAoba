@@ -5,6 +5,8 @@
 
 <%#= render 'shared/error_messages' %>
 
+ <div class="error-message" style="display:none; color:red;">未入力の項目が有ります。</div>
+
 <%= render partial: 'questions/question_form', locals: {id: 1, text: "1ヶ月以内にエステや病院で美容治療を受けましたか？"} %>
 
 <%= render partial: 'questions/question_form', locals: {id: 2, text: "現在妊娠の可能性はありますか？"} %>
@@ -23,7 +25,8 @@
 
 <%= render partial: 'questions/question_form', locals: {id: 9, text: "今までにアレルギー症状がでたことはありますか？"} %>
 
-<%= render partial: 'questions/question_form', locals: {id: 10, text: "3ヶ月以内に結婚式や肌を露出するような大事なイベントはありますか？"} %>
+<%= render partial: 'questions/question_form', locals: {id: 10, text: "3ヶ月以内に結婚式や肌を露出するような大事なイベントはありますか？",
+textarea: "fasdfafds"} %>
 
 <%= render partial: 'questions/question_form', locals: {id: 11, text: "◆以下の事項をご確認の上、チェックボックスにチェックをお願い致します◆"} %>
 
@@ -42,7 +45,7 @@
 <!-- <div id="btn">次へ</div> -->
 <%= link_to '戻る', root_url, class: "btn3" %>
 <div id="btn" class="btn2">次へ</div>
-<%#= link_to '次へ', operations_path, class: "btn2" %>
+<%#= link_to '次へ', operations_path , class: "btn2", id: "btn" %>
 
 <br>
 <hr>

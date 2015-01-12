@@ -1,4 +1,6 @@
 
+<%= flash[:alert] %>
+
 <% if current_user.first_time == 0 %>
 <%= render 'shared/common_form' %>
 <% end %>

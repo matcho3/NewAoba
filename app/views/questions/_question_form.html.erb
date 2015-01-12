@@ -1,30 +1,31 @@
-
-
 <div class="checkList">
-      <div class="container">
-        <div class="wrapper">
+  <div class="container">
+    <div class="wrapper">
+      <!-- <link rel="stylesheet" href="./css/validationEngine.jquery.css" type="text/css"/> -->
 
-          <%= form_for(Question.find(id).answers.build) do |q| %>
-            <%= q.hidden_field :question_id %>
-
-          <div class="tableTitle"><div class="changeArea" style="font-size: 100%;"><span><%= text %></span></div></div>
-          
-          <table class="radio-group question-table">
-            <tbody>
-              <tr>
-                <td class="question-td">
-                  <%= q.radio_button(:content, "yes", id: "item3t") %>
-                  <!-- <input id="item3t" name="item3" type="radio" value="1" style="display: none;"> -->
-                  </div>
-                  <%= q.label :content, 'はい', :value => "yes", class: "changeArea", style: "font-size: 100%" %>
-                  <!-- <label class="changeArea" style="font-size: 100%;">はい</label></td> -->
-
-                  <%= q.radio_button(:content, "yes", id: "item3t") %><%= q.label :content, 'いいえ', :value => "no", class: "changeArea", style: "font-size: 100%" %></td>
-              </tr>
-            </tbody>
-          </table>
-
-          <% end %>
+      <%= form_for(Question.find(id).answers.build) do |q| %>
+        <%= q.hidden_field :question_id %>
+      
+        <div class="tableTitle">
+          <div class="changeArea" style="font-size: 100%;"><span><%= text %></span></div>
         </div>
-      </div>
+      
+        <table class="radio-group question-table">
+          <tbody>
+            <tr>
+              <td class="question-td">
+                <%= q.radio_button(:content, "yes", id: "item3t", class: "validate[required]") %>
+                <!-- <input id="item3t" name="item3" type="radio" value="1" style="display: none;"> -->
+                <!-- </div> -->
+                <%= q.label :content, 'はい', :value => "yes", class: "changeArea", style: "font-size: 100%" %>
+                <!-- <label class="changeArea" style="font-size: 100%;">はい</label></td> -->
+
+                <%= q.radio_button(:content, "yes", id: "item3t") %><%= q.label :content, 'いいえ', :value => "no", class: "changeArea validate[required]", style: "font-size: 100%" %>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      <% end %>
     </div>
+  </div>
+</div>

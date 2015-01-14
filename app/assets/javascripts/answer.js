@@ -39,12 +39,11 @@ $(function() {
 		        })
 			 	.error(function( data ) {
 		            // 通信が失敗したときの処理
-
 		            console.log('error');
 		            // $('.error-message').html('未入力の項目が有ります。');
 		            $('.error-message').show();
 					return;
-					return event.preventDefault();
+					
 		        });
 		    }
 	    } else { // 全部のフォームが入力されていたら

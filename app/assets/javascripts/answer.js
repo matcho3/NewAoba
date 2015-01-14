@@ -21,14 +21,14 @@ $(function() {
 	 	// 		$('.error-message').html('入力されてないよ');
 	 	// 	}
 		}
-		if(val != null) { // 全部のフォームが入力されていたら
+		if(isAllFilled = true) { // 全部のフォームが入力されていたら
 			console.log(val);
 			for(var i=0; i<form.length; i++) {
 				var $form = form.eq(i);
 				$.ajax({
 			 		url: $form.attr('action'),
 			 		type: $form.attr('method'),
-			 		data: $form.serialize(),
+			 		data: $form.serialize()
 			 				            // timeout: 10000,
 		            // dataType: 'text'
 		        })
